@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="Colin Hughes" name="author"/><meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/><meta content="programming,mathematics,problems,puzzles" name="keywords"/><title>Problem 124 - Project Euler</title><link href="http://projecteuler.net/favicon.ico" rel="shortcut icon"/><link href="style_main.css" rel="stylesheet" type="text/css"/><link href="style_light.css" rel="stylesheet" type="text/css"/><script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script></head><body>
+<div id="container">
+<div class="noprint" id="nav">
+<ul>
+<li><a accesskey="h" href="about" title="About">About</a></li>
+<li><a accesskey="1" href="register" title="Register">Register</a></li>
+<li id="current"><a accesskey="2" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="3" href="login" title="Login">Login</a></li>
+</ul>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=e5b32"><img alt="Use secure connection" src="images/icon_lock.png" title="Use secure connection"/></a></div>
+<div class="noprint" id="logo">
+<img alt="Project Euler .net" src="images/pe_banner_light.png"/>
+</div>
+<div id="content">
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/pe_banner.png" style="border:none;"/></div>
+<h2>Ordered radicals</h2><div class="info" style="cursor:help;width:200px;margin-bottom:10px;"><h3>Problem 124</h3><span style="width:300px;color:#666;">Published on Friday, 14th July 2006, 06:00 pm; Solved by 7291</span></div>
+<div class="problem_content" role="problem">
+<p>The radical of <i>n</i>, rad(<i>n</i>), is the product of distinct prime factors of <i>n</i>. For example, 504 = 2<sup>3</sup> <img alt="×" border="0" height="9" src="images/symbol_times.gif" style="vertical-align:middle;" width="9"/> 3<sup>2</sup> <img alt="×" border="0" height="9" src="images/symbol_times.gif" style="vertical-align:middle;" width="9"/> 7, so rad(504) = 2 <img alt="×" border="0" height="9" src="images/symbol_times.gif" style="vertical-align:middle;" width="9"/> 3 <img alt="×" border="0" height="9" src="images/symbol_times.gif" style="vertical-align:middle;" width="9"/> 7 = 42.</p>
+<p>If we calculate rad(<i>n</i>) for <i>1</i> <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> <i>n</i> <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> 10, then sort them on rad(<i>n</i>), and sorting on <i>n</i> if the radical values are equal, we get:</p>
+<table align="center" border="0" cellpadding="2" cellspacing="0">
+<tr>
+<td colspan="2"><div style="text-align:center;"><b>Unsorted</b></div></td>
+<td> </td>
+<td colspan="3"><div style="text-align:center;"><b>Sorted</b></div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;"><img alt="" height="1" src="images/spacer.gif" width="50"/><br/><b><i>n</i></b></div></td>
+<td><div style="text-align:center;"><img alt="" height="1" src="images/spacer.gif" width="50"/><br/><b>rad(<i>n</i>)</b></div></td>
+<td><img alt="" height="1" src="images/spacer.gif" width="50"/><br/></td>
+<td><div style="text-align:center;"><img alt="" height="1" src="images/spacer.gif" width="50"/><br/><b><i>n</i></b></div></td>
+<td><div style="text-align:center;"><img alt="" height="1" src="images/spacer.gif" width="50"/><br/><b>rad(<i>n</i>)</b></div></td>
+<td><div style="text-align:center;"><img alt="" height="1" src="images/spacer.gif" width="50"/><br/><b>k</b></div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">1</div></td><td><div style="text-align:center;">1</div></td>
+<td> </td>
+<td><div style="text-align:center;">1</div></td><td><div style="text-align:center;">1</div></td><td><div style="text-align:center;">1</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">2</div></td><td><div style="text-align:center;">2</div></td>
+<td> </td>
+<td><div style="text-align:center;">2</div></td><td><div style="text-align:center;">2</div></td><td><div style="text-align:center;">2</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">3</div></td><td><div style="text-align:center;">3</div></td>
+<td> </td>
+<td><div style="text-align:center;">4</div></td><td><div style="text-align:center;">2</div></td><td><div style="text-align:center;">3</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">4</div></td><td><div style="text-align:center;">2</div></td>
+<td> </td>
+<td><div style="text-align:center;">8</div></td><td><div style="text-align:center;">2</div></td><td><div style="text-align:center;">4</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">5</div></td><td><div style="text-align:center;">5</div></td>
+<td> </td>
+<td><div style="text-align:center;">3</div></td><td><div style="text-align:center;">3</div></td><td><div style="text-align:center;">5</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">6</div></td><td><div style="text-align:center;">6</div></td>
+<td> </td>
+<td><div style="text-align:center;">9</div></td><td><div style="text-align:center;">3</div></td><td><div style="text-align:center;">6</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">7</div></td><td><div style="text-align:center;">7</div></td>
+<td> </td>
+<td><div style="text-align:center;">5</div></td><td><div style="text-align:center;">5</div></td><td><div style="text-align:center;">7</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">8</div></td><td><div style="text-align:center;">2</div></td>
+<td> </td>
+<td><div style="text-align:center;">6</div></td><td><div style="text-align:center;">6</div></td><td><div style="text-align:center;">8</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">9</div></td><td><div style="text-align:center;">3</div></td>
+<td> </td>
+<td><div style="text-align:center;">7</div></td><td><div style="text-align:center;">7</div></td><td><div style="text-align:center;">9</div></td>
+</tr>
+<tr>
+<td><div style="text-align:center;">10</div></td><td><div style="text-align:center;">10</div></td>
+<td> </td>
+<td><div style="text-align:center;">10</div></td><td><div style="text-align:center;">10</div></td><td><div style="text-align:center;">10</div></td>
+</tr>
+</table>
+<p>Let E(<i>k</i>) be the <i>k</i>th element in the sorted <i>n</i> column; for example, E(4) = 8 and E(6) = 9.</p>
+<p>If rad(<i>n</i>) is sorted for 1 <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> <i>n</i> <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> 100000, find E(10000).</p>
+</div><br/>
+<br/></div>
+<div class="noprint" id="footer">
+<a href="copyright">Project Euler Copyright Information</a>
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+</div>
+<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div></body></html>
