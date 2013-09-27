@@ -1,32 +1,9 @@
 __author__ = 'mitchell'
 
-import urllib.request
 from bs4 import BeautifulSoup as Soup
-
+import urllib.request
 import codecs
 import os
-
-# f = urllib.request.urlopen("http://projecteuler.net/problem=186")
-# soup = Soup(f)
-
-# print(soup)
-
-# content = soup.select("#content")[0]
-#
-# title = content.select("h2")[0]
-# # print(title.string)
-#
-# problemNumber = content.select("h3")[0]
-# # print(problemNumber.string)
-#
-# problemContent = content.select(".problem_content")[0]
-# # print(problemContent)
-#
-# for tag in problemContent:
-#     if tag == '\n':
-#         continue
-#     print(tag)
-#     print(tag.string)
 
 
 def make_dirs_for_image(img):
