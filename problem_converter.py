@@ -1,9 +1,7 @@
-import textwrap
-
 __author__ = 'mitchell'
 
+import textwrap
 import codecs
-
 from bs4 import BeautifulSoup as Soup
 
 
@@ -27,78 +25,6 @@ def write_to_file(text_file, line='', indent=0, cont=False, end='\n'):
     print(comment, end=end)
 
 
-def write_p_tag(element, indent, text_file):
-    write_to_file(text_file)
-    write_to_file(text_file, end='')
-    cont = True
-    end = ''
-    for tag in element:
-        write_element_to_file(text_file, tag, indent, cont, end)
-    write_to_file(text_file, cont=True)
-
-
-def process_tag_img(element, text_file):
-    img_src_ = element.attrs['src']
-    img_alt_ = element.attrs['alt']
-    symbols = {
-        'images/symbol_le.gif',
-        'images/symbol_le.gif',
-        'images/blackdot.gif',
-        'images/bracket_left.gif',
-        'images/bracket_right.gif',
-        'images/icon_lock.png',
-        'images/icon_rss.png',
-        'images/pe_banner.png',
-        'images/pe_banner_light.png',
-        'images/spacer.gif',
-        'images/symbol_asymp.gif',
-        'images/symbol_cong.gif',
-        'images/symbol_ge.gif',
-        'images/symbol_gt.gif',
-        'images/symbol_implies.gif',
-        'images/symbol_le.gif',
-        'images/symbol_lfloor.gif',
-        'images/symbol_lt.gif',
-        'images/symbol_maps.gif',
-        'images/symbol_minus.gif',
-        'images/symbol_ne.gif',
-        'images/symbol_plusmn.gif',
-        'images/symbol_radic.gif',
-        'images/symbol_rfloor.gif',
-        'images/symbol_sum.gif',
-        'images/symbol_times.gif',
-    }
-    if img_src_ in symbols:
-        write_to_file(text_file, img_alt_, cont=True, end='')
-    else:
-        write_to_file(text_file)
-        write_to_file(text_file, element)
-
-
-def write_element_to_file(text_file, element, indent=0, cont=False, end='\n'):
-    if element == '\n':
-        return
-
-    if element.string != None:
-        write_to_file(text_file, element.string, indent, cont, end)
-        return
-
-    tagname = element.name
-    if tagname == "div":
-        pass
-    if tagname == "p":
-        write_p_tag(element, indent, text_file)
-        return
-    elif tagname == "img":
-        process_tag_img(element, text_file)
-        return
-    else:
-        pass
-
-    for tag in element:
-        write_element_to_file(text_file, tag, indent, cont, end)
-
-
 def convert_div_to_string(element):
     str = ""
 
@@ -119,8 +45,6 @@ def convert_img_to_string(element):
         'images/bracket_right.gif',
         'images/icon_lock.png',
         'images/icon_rss.png',
-        'images/pe_banner.png',
-        'images/pe_banner_light.png',
         'images/spacer.gif',
         'images/symbol_asymp.gif',
         'images/symbol_cong.gif',
@@ -141,6 +65,10 @@ def convert_img_to_string(element):
     }
     if img_src_ in symbols:
         return img_alt_
+    elif img_src_ == 'images/pe_banner.png':
+        return ''
+    elif img_src_ == 'images/pe_banner_light.png':
+        return ''
     else:
         return '\n{}'.format(element)
 
@@ -150,10 +78,11 @@ def convert_h2_to_string(element):
 
 
 def convert_sub_to_string(element):
-    return '_{{0}}'.format(convert_div_to_string(element))
+    return '_{{{0}}}'.format(convert_div_to_string(element))
+
 
 def convert_sup_to_string(element):
-    return '^{{0}}'.format(convert_div_to_string(element))
+    return '^{{{0}}}'.format(convert_div_to_string(element))
 
 
 def convert_p_to_string(element):
@@ -166,6 +95,11 @@ def convert_tr_to_string(element):
 
 def convert_td_to_string(element):
     return '\t{0:>7}'.format(convert_div_to_string(element))
+
+
+def convert_dfn_to_string(element):
+    title_ = element.attrs['title']
+    return '{0} (i.e. {1})'.format(convert_div_to_string(element), title_)
 
 
 def convert_element_to_string(element):
@@ -197,6 +131,8 @@ def convert_element_to_string(element):
         return convert_sub_to_string(element)
     elif tagname == 'sup':
         return convert_sup_to_string(element)
+    elif tagname == 'dfn':
+        return convert_dfn_to_string(element)
     elif tagname == 'br':
         return '\n'
     else:
@@ -208,13 +144,17 @@ def convert_problem_page_to_python_file(problem_number=1):
     content_div = problem_soup.select('#content')[0]
 
     problem_title = content_div.select('h2')[0].string
+    problem_info = content_div.select('.info span')[0].string
     filename = make_filename(problem_number, problem_title)
 
     problem_content = content_div.select('.problem_content')[0]
     print(filename + ': ')
     with codecs.open('unsolved/{}'.format(filename), 'w', 'utf-8') as text_file:
-        #write_element_to_file(text_file, content_div)
-        problem_str = convert_element_to_string(content_div)
+        write_to_file(text_file)
+        write_to_file(text_file, 'Problem {0}: {1}'.format(problem_number, problem_title))
+        write_to_file(text_file, '({})'.format(problem_info))
+
+        problem_str = convert_element_to_string(problem_content)
 
         lines = problem_str.splitlines(False)
         for line in lines:
@@ -230,4 +170,6 @@ def convert_problem_page_to_python_file(problem_number=1):
                 write_to_file(text_file, wrapped_line)
 
 
-convert_problem_page_to_python_file(186)
+for n in range(1, 438):
+    print(n)
+    convert_problem_page_to_python_file(n)
