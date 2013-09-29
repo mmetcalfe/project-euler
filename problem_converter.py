@@ -209,7 +209,7 @@ def convert_problem_page_to_python_file(problem_number=1):
 
     problem_content = content_div.select('.problem_content')[0]
     print(filename + ': ')
-    with codecs.open('unsolved/{}'.format(filename), 'w', 'utf-8') as text_file:
+    with codecs.open('unattempted/{}'.format(filename), 'w', 'utf-8') as text_file:
         write_to_file(text_file)
         write_to_file(text_file, 'Problem {0}: {1}'.format(problem_number, problem_title))
         write_to_file(text_file, '({})'.format(problem_info))
