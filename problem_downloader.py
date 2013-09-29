@@ -1,9 +1,10 @@
 __author__ = 'mitchell'
 
-from bs4 import BeautifulSoup as Soup
 import urllib.request
 import codecs
 import os
+
+from bs4 import BeautifulSoup as Soup
 
 
 def make_dirs_for_image(img):
@@ -31,7 +32,7 @@ def save_problem_page(problem_number):
         urllib.request.urlretrieve(url, img.attrs['src'])
 
 
-for n in range(151, 438):
+for n in range(186, 438):
     print(n)
     save_problem_page(n)
 
