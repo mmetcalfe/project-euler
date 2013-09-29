@@ -102,6 +102,31 @@ def convert_dfn_to_string(element):
     return '{0} (i.e. {1})'.format(convert_div_to_string(element), title_)
 
 
+def convert_b_to_string(element):
+    return '*{}*'.format(convert_div_to_string(element))
+
+
+def convert_a_to_string(element):
+    href = element.attrs['href']
+    return '[{0}]({1})'.format(convert_div_to_string(element), href)
+
+
+def convert_li_to_string(element):
+    return '\t- {}\n'.format(convert_div_to_string(element))
+
+
+def convert_ol_to_string(element):
+    str = '\n'
+    num = 1
+    for tag in element:
+        if tag.name != 'li':
+            continue
+        str += '\t{0}. {1}\n'.format(num, convert_div_to_string(tag))
+        num += 1
+
+    return str + '\n'
+
+
 def convert_element_to_string(element):
     if element == '\n':
         return ""
@@ -109,7 +134,17 @@ def convert_element_to_string(element):
     tagname = element.name
     if tagname == None:
         return element
-    if tagname == 'div':
+    elif tagname == 'div':
+        return convert_div_to_string(element)
+    elif tagname == 'a':
+        return convert_a_to_string(element)
+    elif tagname == 'i':
+        return convert_div_to_string(element)
+    elif tagname == 'em':
+        return convert_div_to_string(element)
+    elif tagname == 'blockquote':
+        return convert_div_to_string(element)
+    elif tagname == 'var':
         return convert_div_to_string(element)
     elif tagname == 'img':
         return convert_img_to_string(element)
@@ -121,12 +156,22 @@ def convert_element_to_string(element):
         return convert_div_to_string(element)
     elif tagname == 'p':
         return convert_p_to_string(element)
+    elif tagname == 'b':
+        return convert_b_to_string(element)
     elif tagname == 'table':
         return convert_p_to_string(element)
+    elif tagname == 'tbody':
+        return convert_div_to_string(element)
     elif tagname == 'tr':
         return convert_tr_to_string(element)
     elif tagname == 'td':
         return convert_td_to_string(element)
+    elif tagname == 'ul':
+        return convert_p_to_string(element)
+    elif tagname == 'li':
+        return convert_li_to_string(element)
+    elif tagname == 'ol':
+        return convert_ol_to_string(element)
     elif tagname == 'sub':
         return convert_sub_to_string(element)
     elif tagname == 'sup':
@@ -143,7 +188,8 @@ def convert_problem_page_to_python_file(problem_number=1):
     problem_soup = soup_for_problem(problem_number)
     content_div = problem_soup.select('#content')[0]
 
-    problem_title = content_div.select('h2')[0].string
+    problem_title_elem = content_div.select('h2')[0]
+    problem_title = convert_div_to_string(problem_title_elem)
     problem_info = content_div.select('.info span')[0].string
     filename = make_filename(problem_number, problem_title)
 
