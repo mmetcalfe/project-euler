@@ -45,7 +45,6 @@ def convert_img_to_string(element):
         'images/bracket_right.gif',
         'images/icon_lock.png',
         'images/icon_rss.png',
-        'images/spacer.gif',
         'images/symbol_asymp.gif',
         'images/symbol_cong.gif',
         'images/symbol_ge.gif',
@@ -133,7 +132,7 @@ def convert_element_to_string(element):
 
     tagname = element.name
     if tagname == None:
-        return element
+        return str(element).strip('\n')
     elif tagname == 'div':
         return convert_div_to_string(element)
     elif tagname == 'a':
@@ -184,6 +183,21 @@ def convert_element_to_string(element):
         raise Exception('Unrecognised tagname: \'{}\''.format(tagname))
 
 
+def write_problem_string_to_file(problem_str, text_file):
+    lines = problem_str.splitlines(False)
+    for line in lines:
+        wrapped_text = textwrap.wrap(
+            text=line,
+            width=70 - 2,
+            tabsize=4,
+            subsequent_indent='\t')
+        if len(wrapped_text) == 0:
+            write_to_file(text_file)
+            continue
+        for wrapped_line in wrapped_text:
+            write_to_file(text_file, wrapped_line)
+
+
 def convert_problem_page_to_python_file(problem_number=1):
     problem_soup = soup_for_problem(problem_number)
     content_div = problem_soup.select('#content')[0]
@@ -202,20 +216,11 @@ def convert_problem_page_to_python_file(problem_number=1):
 
         problem_str = convert_element_to_string(problem_content)
 
-        lines = problem_str.splitlines(False)
-        for line in lines:
-            wrapped_text = textwrap.wrap(
-                text=line,
-                width=70 - 2,
-                tabsize=4,
-                subsequent_indent='\t')
-            if len(wrapped_text) == 0:
-                write_to_file(text_file)
-                continue
-            for wrapped_line in wrapped_text:
-                write_to_file(text_file, wrapped_line)
+        write_problem_string_to_file(problem_str, text_file)
 
 
-for n in range(1, 438):
-    print(n)
-    convert_problem_page_to_python_file(n)
+#for n in range(1, 438):
+#    print(n)
+#    convert_problem_page_to_python_file(n)
+
+convert_problem_page_to_python_file(8)

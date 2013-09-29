@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4892ad7-b42b-48c2-962e-856cea9932b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem015_lattice_paths.py" afterPath="$PROJECT_DIR$/unsolved/problem015_lattice_paths.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem186_connectedness_of_a_network..py" afterPath="$PROJECT_DIR$/unsolved/problem186_connectedness_of_a_network..py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem008_largest_product_in_a_series.py" afterPath="$PROJECT_DIR$/unsolved/problem008_largest_product_in_a_series.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem013_large_sum.py" afterPath="$PROJECT_DIR$/unsolved/problem013_large_sum.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem019_counting_sundays.py" afterPath="$PROJECT_DIR$/unsolved/problem019_counting_sundays.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem029_distinct_powers.py" afterPath="$PROJECT_DIR$/unsolved/problem029_distinct_powers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem030_digit_fifth_powers.py" afterPath="$PROJECT_DIR$/unsolved/problem030_digit_fifth_powers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem074_digit_factorial_chains.py" afterPath="$PROJECT_DIR$/unsolved/problem074_digit_factorial_chains.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem076_counting_summations.py" afterPath="$PROJECT_DIR$/unsolved/problem076_counting_summations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem077_prime_summations.py" afterPath="$PROJECT_DIR$/unsolved/problem077_prime_summations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem084_monopoly_odds.py" afterPath="$PROJECT_DIR$/unsolved/problem084_monopoly_odds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem087_prime_power_triples.py" afterPath="$PROJECT_DIR$/unsolved/problem087_prime_power_triples.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem092_square_digit_chains.py" afterPath="$PROJECT_DIR$/unsolved/problem092_square_digit_chains.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem093_arithmetic_expressions.py" afterPath="$PROJECT_DIR$/unsolved/problem093_arithmetic_expressions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem096_su_doku.py" afterPath="$PROJECT_DIR$/unsolved/problem096_su_doku.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem102_triangle_containment.py" afterPath="$PROJECT_DIR$/unsolved/problem102_triangle_containment.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem109_darts.py" afterPath="$PROJECT_DIR$/unsolved/problem109_darts.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem114_counting_block_combinations_i.py" afterPath="$PROJECT_DIR$/unsolved/problem114_counting_block_combinations_i.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem116_red,_green_or_blue_tiles.py" afterPath="$PROJECT_DIR$/unsolved/problem116_red,_green_or_blue_tiles.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem117_red,_green,_and_blue_tiles.py" afterPath="$PROJECT_DIR$/unsolved/problem117_red,_green,_and_blue_tiles.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem124_ordered_radicals.py" afterPath="$PROJECT_DIR$/unsolved/problem124_ordered_radicals.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem147_rectangles_in_cross-hatched_grids.py" afterPath="$PROJECT_DIR$/unsolved/problem147_rectangles_in_cross-hatched_grids.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem150_searching_a_triangular_array_for_a_sub-triangle_having_minimum-sum..py" afterPath="$PROJECT_DIR$/unsolved/problem150_searching_a_triangular_array_for_a_sub-triangle_having_minimum-sum..py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/problem_converter.py" afterPath="$PROJECT_DIR$/problem_converter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project-euler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +37,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/project-euler$problem_downloader.coverage" NAME="problem_downloader Coverage Results" MODIFIED="1380349366597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project-euler$problem_converter.coverage" NAME="problem_converter Coverage Results" MODIFIED="1380445977554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project-euler$problem_converter.coverage" NAME="problem_converter Coverage Results" MODIFIED="1380450885260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,10 +54,19 @@
       <file leaf-file-name="problem_converter.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/problem_converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="25" selection-start="4996" selection-end="4996" vertical-scroll-proportion="1.0216138" vertical-offset="1991" max-vertical-offset="3390">
+            <state line="106" column="0" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-1.701729" vertical-offset="2771" max-vertical-offset="3465">
               <folding>
                 <element signature="e#25#40#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="element.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.0" vertical-offset="10037" max-vertical-offset="24195">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -499,7 +528,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14812085" sideWeight="0.27176782" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37292466" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.12935324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.12935324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -522,19 +551,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="660">
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problem_converter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -615,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/textwrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="23" selection-start="1485" selection-end="1502" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="6255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problem_downloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="815" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
@@ -631,9 +644,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.0" vertical-offset="10037" max-vertical-offset="24195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/textwrap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="23" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.80622345" vertical-offset="345" max-vertical-offset="6255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/problem_converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="25" selection-start="4996" selection-end="4996" vertical-scroll-proportion="1.0216138" vertical-offset="1991" max-vertical-offset="3390">
+        <state line="106" column="0" selection-start="2714" selection-end="2714" vertical-scroll-proportion="-1.701729" vertical-offset="2771" max-vertical-offset="3465">
           <folding>
             <element signature="e#25#40#0" expanded="true" />
           </folding>
