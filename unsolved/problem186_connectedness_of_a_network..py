@@ -1,8 +1,7 @@
-# projecteuler.net
-# Connectedness of a network.
 # 
-# Problem 186
-# Published on Saturday, 15th March 2008, 05:00 am; Solved by 1495
+# Problem 186: Connectedness of a network.
+# (Published on Saturday, 15th March 2008, 05:00 am; Solved by 1495)
+# 
 #     Here are the records from a busy telephone system with one
 # 	million users:
 # 
@@ -14,13 +13,13 @@
 # 
 # 
 #     The telephone number of the caller and the called number in
-# 	record n are Caller(n) = S_{0} and Called(n) = S_{0} where S_{0}
-# 	come from the "Lagged Fibonacci Generator":
+# 	record n are Caller(n) = S_{2n-1} and Called(n) = S_{2n} where
+# 	S_{1,2,3,...} come from the "Lagged Fibonacci Generator":
 # 
-#     For 1 ≤ k ≤ 55, S_{0} = [100003 - 200003k + 300007k^{0}] (modulo
+#     For 1 ≤ k ≤ 55, S_{k} = [100003 - 200003k + 300007k^{3}] (modulo
 # 	1000000)
 # 
-# For 56 ≤ k, S_{0} = [S_{0} + S_{0}] (modulo 1000000)
+# For 56 ≤ k, S_{k} = [S_{k-24} + S_{k-55}] (modulo 1000000)
 # 
 #     If Caller(n) = Called(n) then the user is assumed to have
 # 	misdialled and the call fails; otherwise the call is successful.
@@ -34,5 +33,3 @@
 # 	successful calls, not counting misdials, will 99% of the users
 # 	(including the PM) be a friend, or a friend of a friend etc., of
 # 	the Prime Minister?
-# 
-# 
