@@ -219,8 +219,7 @@ def convert_problem_page_to_python_file(problem_number=1):
         write_problem_string_to_file(problem_str, text_file)
 
 
-#for n in range(1, 438):
-#    print(n)
-#    convert_problem_page_to_python_file(n)
+for n in range(1, 438):
+    print(n)
+    convert_problem_page_to_python_file(n)
 
-convert_problem_page_to_python_file(8)

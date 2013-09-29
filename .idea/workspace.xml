@@ -2,159 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4892ad7-b42b-48c2-962e-856cea9932b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem001_multiples_of_3_and_5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem002_even_fibonacci_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem005_smallest_multiple.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem006_sum_square_difference.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem007_10001st_prime.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem008_largest_product_in_a_series.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem009_special_pythagorean_triplet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem010_summation_of_primes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem011_largest_product_in_a_grid.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem012_highly_divisible_triangular_number.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem013_large_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem014_longest_collatz_sequence.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem015_lattice_paths.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem016_power_digit_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem017_number_letter_counts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem018_maximum_path_sum_i.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem019_counting_sundays.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem020_factorial_digit_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem021_amicable_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem022_names_scores.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem023_non-abundant_sums.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem024_lexicographic_permutations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem025_1000-digit_fibonacci_number.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem026_reciprocal_cycles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem027_quadratic_primes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem028_number_spiral_diagonals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem029_distinct_powers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem030_digit_fifth_powers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem031_coin_sums.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem032_pandigital_products.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem033_digit_canceling_fractions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem034_digit_factorials.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem035_circular_primes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem036_double-base_palindromes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem037_truncatable_primes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem038_pandigital_multiples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem039_integer_right_triangles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem040_champernowne's_constant.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem041_pandigital_prime.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem042_coded_triangle_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem043_sub-string_divisibility.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem044_pentagon_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem045_triangular,_pentagonal,_and_hexagonal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem046_goldbach's_other_conjecture.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem047_distinct_primes_factors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem048_self_powers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem049_prime_permutations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem050_consecutive_prime_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem051_prime_digit_replacements.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem052_permuted_multiples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem053_combinatoric_selections.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem054_poker_hands.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem055_lychrel_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem056_powerful_digit_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem057_square_root_convergents.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem058_spiral_primes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem059_xor_decryption.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem060_prime_pair_sets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem061_cyclical_figurate_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem062_cubic_permutations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem063_powerful_digit_counts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem064_odd_period_square_roots.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem065_convergents_of_e.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem066_diophantine_equation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem067_maximum_path_sum_ii.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem068_magic_5-gon_ring.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem069_totient_maximum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem070_totient_permutation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem071_ordered_fractions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem072_counting_fractions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem073_counting_fractions_in_a_range.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem074_digit_factorial_chains.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem075_singular_integer_right_triangles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem076_counting_summations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem077_prime_summations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem078_coin_partitions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem079_passcode_derivation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem080_square_root_digital_expansion.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem081_path_sum:_two_ways.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem082_path_sum:_three_ways.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem083_path_sum:_four_ways.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem084_monopoly_odds.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem085_counting_rectangles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem086_cuboid_route.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem087_prime_power_triples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem088_product-sum_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem089_roman_numerals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem090_cube_digit_pairs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem091_right_triangles_with_integer_coordinates.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem092_square_digit_chains.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem093_arithmetic_expressions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem094_almost_equilateral_triangles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem095_amicable_chains.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem096_su_doku.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem097_large_non-mersenne_prime.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem098_anagramic_squares.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem099_largest_exponential.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem100_arranged_probability.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem101_optimum_polynomial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem102_triangle_containment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem103_special_subset_sums:_optimum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem104_pandigital_fibonacci_ends.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem105_special_subset_sums:_testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem106_special_subset_sums:_meta-testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem107_minimal_network.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem108_diophantine_reciprocals_i.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem109_darts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem110_diophantine_reciprocals_ii.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem111_primes_with_runs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem112_bouncy_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem113_non-bouncy_numbers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem114_counting_block_combinations_i.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem115_counting_block_combinations_ii.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem116_red,_green_or_blue_tiles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem117_red,_green,_and_blue_tiles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem118_pandigital_prime_sets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem119_digit_power_sum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem120_square_remainders.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem121_disc_game_prize_fund.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem122_efficient_exponentiation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem123_prime_square_remainders.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem124_ordered_radicals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem125_palindromic_sums.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem126_cuboid_layers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem127_abc-hits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem128_hexagonal_tile_differences.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem129_repunit_divisibility.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem130_composites_with_prime_repunit_property.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem131_prime_cube_partnership.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem132_large_repunit_factors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem133_repunit_nonfactors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem134_prime_pair_connection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem135_same_differences.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem136_singleton_difference.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem137_fibonacci_golden_nuggets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem138_special_isosceles_triangles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem139_pythagorean_tiles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem140_modified_fibonacci_golden_nuggets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem141_investigating_progressive_numbers,_n,_which_are_also_square..py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem142_perfect_square_collection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem143_investigating_the_torricelli_point_of_a_triangle.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem144_investigating_multiple_reflections_of_a_laser_beam._.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem145_how_many_reversible_numbers_are_there_below_one-billion?.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem146_investigating_a_prime_pattern_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem147_rectangles_in_cross-hatched_grids.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem148_exploring_pascal's_triangle..py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem149_searching_for_a_maximum-sum_subsequence..py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem150_searching_a_triangular_array_for_a_sub-triangle_having_minimum-sum..py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem151_paper_sheets_of_standard_sizes:_an_expected-value_problem..py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/unsolved/problem186_connectedness_of_a_network..py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" afterPath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/problem_converter.py" afterPath="$PROJECT_DIR$/problem_converter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project-euler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -168,6 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/project-euler$problem_downloader.coverage" NAME="problem_downloader Coverage Results" MODIFIED="1380349366597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project-euler$problem_converter.coverage" NAME="problem_converter Coverage Results" MODIFIED="1380451132191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project-euler$problem003_largest_prime_factor.coverage" NAME="problem003_largest_prime_factor Coverage Results" MODIFIED="1380454216178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unsolved" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -181,33 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="problem_converter.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/problem_converter.py">
+      <file leaf-file-name="problem003_largest_prime_factor.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="217" column="0" selection-start="6376" selection-end="6376" vertical-scroll-proportion="0.7334294" vertical-offset="2746" max-vertical-offset="3465">
-              <folding>
-                <element signature="e#25#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="element.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.0" vertical-offset="10037" max-vertical-offset="24195">
+            <state line="29" column="27" selection-start="696" selection-end="696" vertical-scroll-proportion="0.28719008" vertical-offset="296" max-vertical-offset="825">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="problem_downloader.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="815" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-              <folding>
-                <element signature="e#25#46#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -240,12 +69,13 @@
         <option value="$PROJECT_DIR$/unsolved/problem186_connectedness_of_a_network..py" />
         <option value="$PROJECT_DIR$/problem_downloader.py" />
         <option value="$PROJECT_DIR$/problem_converter.py" />
+        <option value="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="702" />
+    <option name="width" value="1403" />
     <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -300,14 +130,6 @@
               <option name="myItemId" value="project-euler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.3.2 (/opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/bin/python3.3) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -353,7 +175,13 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.problem_converter">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/problem_pages" />
+      <recent name="$PROJECT_DIR$/unsolved" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.problem003_largest_prime_factor">
     <configuration default="false" name="problem001_multiplesOf3And5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,6 +259,25 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem003_largest_prime_factor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unsolved" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project-euler" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -584,18 +431,20 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.problem001_multiplesOf3And5" />
       <item index="1" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
       <item index="2" class="java.lang.String" itemvalue="Python.problem_downloader" />
       <item index="3" class="java.lang.String" itemvalue="Python.problem_converter" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem003_largest_prime_factor" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.problem_converter" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_downloader" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem001_multiplesOf3And5" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.problem003_largest_prime_factor" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem_converter" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_downloader" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem001_multiplesOf3And5" />
       </list>
     </recent_temporary>
   </component>
@@ -646,7 +495,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="702" height="878" extended-state="0" />
+    <frame x="0" y="22" width="1403" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -654,11 +503,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5923483" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1875" sideWeight="0.8690773" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1761238" sideWeight="0.67368424" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14812085" sideWeight="0.27176782" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37292466" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.12935324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -687,28 +536,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/problem_converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#25#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problem_converter.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="4" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#25#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -753,22 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="815" selection-end="876" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.0" vertical-offset="10037" max-vertical-offset="24195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/textwrap.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="23" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.80622345" vertical-offset="345" max-vertical-offset="6255">
@@ -776,12 +589,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="1" selection-start="196" selection-end="196" vertical-scroll-proportion="0.16203703" vertical-offset="0" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/problem_converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="0" selection-start="6376" selection-end="6376" vertical-scroll-proportion="0.7334294" vertical-offset="2746" max-vertical-offset="3465">
+        <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.067064084" vertical-offset="0" max-vertical-offset="3465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.19164266" vertical-offset="10037" max-vertical-offset="24195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="815" selection-end="876" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="694">
           <folding>
-            <element signature="e#25#40#0" expanded="true" />
+            <element signature="e#25#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem001_multiples_of_3_and_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsolved/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.030991735" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="27" selection-start="696" selection-end="696" vertical-scroll-proportion="0.28719008" vertical-offset="296" max-vertical-offset="825">
+          <folding />
         </state>
       </provider>
     </entry>

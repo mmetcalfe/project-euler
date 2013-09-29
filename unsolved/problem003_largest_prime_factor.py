@@ -8,3 +8,43 @@
 # 
 # Note: This problem has been changed recently, please check that you
 # 	are using the right number.
+
+import math
+
+def is_prime(n):
+    if n < 2:
+        return False
+
+    for k in range(2, min(n, int(math.sqrt(n)) + 2)):
+        if n % k == 0:
+            return False
+    return True
+
+# Find the set of prime factors of a given integer.
+def prime_factors(n):
+    factors = []
+    m = n
+    k = 0
+    while k < m:
+        k += 1
+        if not is_prime(k):
+            continue
+
+        if m % k == 0:
+            while m % k == 0:
+                factors.append(k)
+                m /= k
+                #print(k)
+
+    return factors
+
+answer_factors = prime_factors(600851475143)
+
+# Print answer:
+print('Answer:', max(answer_factors))
+
+# Check answer:
+prod = 1
+for v in answer_factors:
+    prod *= v
+print('Check: prod(', answer_factors, ') -> ', prod, sep='')
