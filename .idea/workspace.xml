@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4892ad7-b42b-48c2-962e-856cea9932b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" afterPath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/problem_converter.py" afterPath="$PROJECT_DIR$/problem_converter.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/unattempted/problem004_largest_palindrome_product.py" afterPath="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" afterPath="$PROJECT_DIR$/solved/problem003_largest_prime_factor.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project-euler.iws" />
@@ -16,9 +16,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/project-euler$problem004_largest_palindrome_product.coverage" NAME="problem004_largest_palindrome_product Coverage Results" MODIFIED="1380461010405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unsolved" />
     <SUITE FILE_PATH="coverage/project-euler$problem_downloader.coverage" NAME="problem_downloader Coverage Results" MODIFIED="1380349366597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project-euler$problem_converter.coverage" NAME="problem_converter Coverage Results" MODIFIED="1380451132191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/project-euler$problem003_largest_prime_factor.coverage" NAME="problem003_largest_prime_factor Coverage Results" MODIFIED="1380454216178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unsolved" />
+    <SUITE FILE_PATH="coverage/project-euler$problem003_largest_prime_factor.coverage" NAME="problem003_largest_prime_factor Coverage Results" MODIFIED="1380461059210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/unsolved" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,9 +34,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="problem003_largest_prime_factor.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py">
+        <entry file="file://$PROJECT_DIR$/solved/problem003_largest_prime_factor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="27" selection-start="696" selection-end="696" vertical-scroll-proportion="0.28719008" vertical-offset="296" max-vertical-offset="825">
+            <state line="32" column="22" selection-start="741" selection-end="741" vertical-scroll-proportion="0.36363637" vertical-offset="296" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="problem004_largest_palindrome_product.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="21" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -70,13 +80,15 @@
         <option value="$PROJECT_DIR$/problem_downloader.py" />
         <option value="$PROJECT_DIR$/problem_converter.py" />
         <option value="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
+        <option value="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1403" />
-    <option name="height" value="878" />
+    <option name="x" value="240" />
+    <option name="y" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -155,6 +167,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-euler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-euler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="solved" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -177,30 +203,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/problem_pages" />
+      <recent name="$PROJECT_DIR$/solved" />
       <recent name="$PROJECT_DIR$/unsolved" />
+      <recent name="$PROJECT_DIR$/problem_pages" />
     </key>
   </component>
   <component name="RunManager" selected="Python.problem003_largest_prime_factor">
-    <configuration default="false" name="problem001_multiplesOf3And5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project-euler" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/problem001_multiplesOf3And5.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="problem002_evenFibonacciNumbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,7 +283,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="project-euler" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved/problem003_largest_prime_factor.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem004_largest_palindrome_product" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unsolved" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project-euler" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -432,19 +459,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.problem001_multiplesOf3And5" />
-      <item index="1" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
-      <item index="2" class="java.lang.String" itemvalue="Python.problem_downloader" />
-      <item index="3" class="java.lang.String" itemvalue="Python.problem_converter" />
-      <item index="4" class="java.lang.String" itemvalue="Python.problem003_largest_prime_factor" />
+      <item index="0" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
+      <item index="1" class="java.lang.String" itemvalue="Python.problem_downloader" />
+      <item index="2" class="java.lang.String" itemvalue="Python.problem_converter" />
+      <item index="3" class="java.lang.String" itemvalue="Python.problem003_largest_prime_factor" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem004_largest_palindrome_product" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.problem003_largest_prime_factor" />
-        <item index="1" class="java.lang.String" itemvalue="Python.problem_converter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.problem_downloader" />
-        <item index="3" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
-        <item index="4" class="java.lang.String" itemvalue="Python.problem001_multiplesOf3And5" />
+        <item index="1" class="java.lang.String" itemvalue="Python.problem004_largest_palindrome_product" />
+        <item index="2" class="java.lang.String" itemvalue="Python.problem_converter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.problem_downloader" />
+        <item index="4" class="java.lang.String" itemvalue="Python.problem002_evenFibonacciNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -495,19 +522,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1403" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="240" y="1080" width="1440" height="900" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5923483" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1761238" sideWeight="0.67368424" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17144907" sideWeight="0.6828644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14812085" sideWeight="0.27176782" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37292466" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3263158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31713554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -534,22 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/problem_converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4129353" vertical-offset="0" max-vertical-offset="0" />
@@ -596,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/problem_converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.067064084" vertical-offset="0" max-vertical-offset="3465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.19164266" vertical-offset="10037" max-vertical-offset="24195">
@@ -633,9 +637,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py">
+    <entry file="file://$PROJECT_DIR$/unattempted/problem005_smallest_multiple.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="27" selection-start="696" selection-end="696" vertical-scroll-proportion="0.28719008" vertical-offset="296" max-vertical-offset="825">
+        <state line="10" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/problem_converter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="3465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solved/problem003_largest_prime_factor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="741" selection-end="741" vertical-scroll-proportion="0.36363637" vertical-offset="296" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
