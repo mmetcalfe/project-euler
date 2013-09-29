@@ -11,11 +11,17 @@
 # 
 #         *Unsorted*          *Sorted*
 # 
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # *n*
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # *rad(n)*
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # 
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # *n*
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # *rad(n)*
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # *k*
 #           1       1               1       1       1
 #           2       2               2       2       2

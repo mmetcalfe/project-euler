@@ -18,9 +18,7 @@
 # 
 #     t := 0
 # 
-# 
 # for k = 1 up to k = 500500:
-# 
 # 
 #     t := (615949*t + 797807) modulo 2^{20}
 # 
@@ -37,19 +35,15 @@
 # 
 # s_{4}  s_{5}  s_{6}
 # 
-# 
 # s_{7}  s_{8}  s_{9}  s_{10}
 # 
 # ...
-# 
 #     Sub-triangles can start at any element of the array and extend
 # 	down as far as we like (taking-in the two elements directly below
 # 	it from the next row, the three elements directly below from the
 # 	row after that, and so on).
 # 
-# 
 # The "sum of a sub-triangle" is defined as the sum of all the
 # 	elements it contains.
-# 
 # 
 # Find the smallest possible sub-triangle sum.

@@ -13,13 +13,9 @@
 # 	rectangles could be situated within those smaller grids:
 # 
 #     1x1: 1
-# 
 # 2x1: 4
-# 
 # 3x1: 8
-# 
 # 1x2: 4
-# 
 # 2x2: 18
 # 
 #     Adding those to the 37 of the 3x2 grid, a total of 72 different

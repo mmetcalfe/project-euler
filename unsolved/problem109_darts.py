@@ -36,8 +36,11 @@
 # 	6:
 # 
 # 
+# <img alt="" height="1" src="images/spacer.gif" width="80"/>
 # D3
+# <img alt="" height="1" src="images/spacer.gif" width="80"/>
 # 
+# <img alt="" height="1" src="images/spacer.gif" width="80"/>
 # 
 #          D1      D2
 #          S2      D2

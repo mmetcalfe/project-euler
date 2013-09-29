@@ -8,11 +8,8 @@
 # 	way:
 # 
 #     28 = 2^{2} + 2^{3} + 2^{4}
-# 
 # 33 = 3^{2} + 2^{3} + 2^{4}
-# 
 # 49 = 5^{2} + 2^{3} + 2^{4}
-# 
 # 47 = 2^{2} + 3^{3} + 2^{4}
 # 
 #     How many numbers below fifty million can be expressed as the sum

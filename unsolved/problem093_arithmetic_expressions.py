@@ -10,11 +10,8 @@
 #     For example,
 # 
 #     8 = (4 * (1 + 3)) / 2
-# 
 # 14 = 4 * (3 + 1 / 2)
-# 
 # 19 = 4 * (2 + 3) − 1
-# 
 # 36 = 3 * 4 * (2 + 1)
 # 
 #     Note that concatenations of the digits, like 12 + 34, are not

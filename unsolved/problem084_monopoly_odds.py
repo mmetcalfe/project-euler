@@ -42,13 +42,11 @@
 # 	CC/CH square.
 # 
 #         - Community Chest (2/16 cards):
-# 
 #     1. Advance to GO
 #     2. Go to JAIL
 # 
 # 
 #     - Chance (10/16 cards):
-# 
 #     1. Advance to GO
 #     2. Go to JAIL
 #     3. Go to C1

@@ -12,18 +12,14 @@
 # 	only three such loops that exist:
 # 
 #     169 → 363601 → 1454 → 169
-# 
 # 871 → 45361 → 871
-# 
 # 872 → 45362 → 872
 # 
 #     It is not difficult to prove that EVERY starting number will
 # 	eventually get stuck in a loop. For example,
 # 
 #     69 → 363600 → 1454 → 169 → 363601 (→ 1454)
-# 
 # 78 → 45360 → 871 → 45361 (→ 871)
-# 
 # 540 → 145 (→ 145)
 # 
 #     Starting with 69 produces a chain of five non-repeating terms,

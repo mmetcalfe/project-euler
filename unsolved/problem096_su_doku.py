@@ -35,6 +35,7 @@
 # 3 0 0
 # 
 # 
+# <img alt="" height="1" src="images/spacer.gif" width="50"/>
 # 
 #         4 8 3
 # 9 6 7
