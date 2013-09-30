@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4892ad7-b42b-48c2-962e-856cea9932b9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" afterPath="$PROJECT_DIR$/solved/problem004_largest_palindrome_product.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/unattempted/problem001_multiples_of_3_and_5.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/unattempted/problem002_even_fibonacci_numbers.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py" afterPath="$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solved/problem002_even_fibonacci_numbers.py" afterPath="$PROJECT_DIR$/solved/problem002_even_fibonacci_numbers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project-euler.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +34,17 @@
     <favorites_list name="project-euler" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="problem005_smallest_multiple.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unattempted/problem005_smallest_multiple.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.20576131" vertical-offset="0" max-vertical-offset="729">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -60,13 +74,15 @@
         <option value="$PROJECT_DIR$/problem_converter.py" />
         <option value="$PROJECT_DIR$/unsolved/problem003_largest_prime_factor.py" />
         <option value="$PROJECT_DIR$/unsolved/problem004_largest_palindrome_product.py" />
+        <option value="$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py" />
+        <option value="$PROJECT_DIR$/solved/problem002_even_fibonacci_numbers.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="240" />
     <option name="y" value="1080" />
-    <option name="width" value="1440" />
+    <option name="width" value="720" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -143,6 +159,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="unsolved" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-euler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-euler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unattempted" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,19 +531,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="1080" width="1440" height="900" extended-state="0" />
+    <frame x="240" y="1080" width="720" height="900" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.44914135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="960" y="1530" width="720" height="450" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5923483" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17144907" sideWeight="0.6828644" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17144907" sideWeight="0.6828644" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14812085" sideWeight="0.27176782" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37292466" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31713554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="701" y="22" width="702" height="878" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.31713554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="960" y="1080" width="720" height="450" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -540,89 +570,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.4129353" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/urllib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/html/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="467" column="8" selection-start="17746" selection-end="17746" vertical-scroll-proportion="1.0547264" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/-1861796815/lxml/etree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/beautifulsoup4-4.3.1-py3.3.egg-info/installed-files.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="428" selection-end="428" vertical-scroll-proportion="0.39933443" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/-1861796815/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.3448276" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/Cellar/python3/3.3.2/Frameworks/Python.framework/Versions/3.3/lib/python3.3/textwrap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="23" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.80622345" vertical-offset="345" max-vertical-offset="6255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="196" selection-end="196" vertical-scroll-proportion="0.16203703" vertical-offset="0" max-vertical-offset="648">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///opt/boxen/homebrew/lib/python3.3/site-packages/bs4/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="682" column="0" selection-start="25355" selection-end="25355" vertical-scroll-proportion="0.19164266" vertical-offset="10037" max-vertical-offset="24195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/problem_downloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="815" selection-end="876" vertical-scroll-proportion="0.7348703" vertical-offset="0" max-vertical-offset="694">
-          <folding>
-            <element signature="e#25#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unattempted/problem001_multiples_of_3_and_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unsolved/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.030991735" vertical-offset="0" max-vertical-offset="484">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unattempted/problem005_smallest_multiple.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/problem_converter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="13" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="3465">
@@ -640,6 +587,83 @@
     <entry file="file://$PROJECT_DIR$/solved/problem004_largest_palindrome_product.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="15" selection-start="529" selection-end="529" vertical-scroll-proportion="0.5632411" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem006_sum_square_difference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem007_10001st_prime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem008_largest_product_in_a_series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem009_special_pythagorean_triplet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem010_summation_of_primes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem011_largest_product_in_a_grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem012_highly_divisible_triangular_number.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solved/problem001_multiples_of_3_and_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="61" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/solved/problem002_even_fibonacci_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="573" selection-end="573" vertical-scroll-proportion="0.49689442" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem013_large_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="52" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unattempted/problem005_smallest_multiple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.20576131" vertical-offset="0" max-vertical-offset="729">
           <folding />
         </state>
       </provider>
