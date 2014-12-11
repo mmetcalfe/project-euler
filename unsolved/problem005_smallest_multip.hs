@@ -60,22 +60,29 @@ factors n = filter (isFactor n) [1..n]
 primeFactors :: Integer -> [Integer]
 primeFactors n = filter isPrime (factors n)
 
--- a^b = c => log_a(c) = b
-floorLog :: Integer -> Integer -> Integer
-floorLog b v = 4 -- floor (log 3.8 4.8)
+-- -- a^b = c => log_a(c) = b
+-- floorLog :: Integer -> Integer -> Integer
+-- floorLog b v = floor (logBase (fromIntegral b) (fromIntegral v)::Double)
 
+factorOrder' :: Integer -> Integer -> Integer -> Integer
+factorOrder' n f k = if isFactor n v then factorOrder' n f k' else k
+    where k' = k+1
+          v  = f^k'
+factorOrder :: Integer -> Integer -> Integer
+factorOrder n f = factorOrder' n f 0
+
+primeFactorsMultiplicity :: Integer -> [(Integer, Integer)]
+primeFactorsMultiplicity n =
+    let p = primeFactors n
+        m = map (factorOrder n) p
+    in zip p m
+
+-- smallestMultiple :: Integer -> Integer
+-- smallestMultiple n = map primeFactorsMultiplicity [1..n]
+
+main :: IO()
 main = do
-    print "Hello"
-    print (isPrime 2)
-    print (isPrime 3)
-    print (isPrime 4)
-    print (isPrime 5)
-    print (isPrime 6)
-    print (isPrime 7)
-    print (factors 60)
-    print (primeFactors 60)
-    print (floor 4.6)
-    print (log 3 7)
-    --print (floor (toRational (log 6 7)))
-
-
+    print $ factors 60
+    print $ primeFactors 60
+    print $ primeFactorsMultiplicity 60
+    print $ map primeFactorsMultiplicity [2..20]
