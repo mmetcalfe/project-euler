@@ -7,7 +7,7 @@
 --     What is the largest prime factor of the number 600851475143 ?
 -- 
 -- Note: This problem has been changed recently, please check that you
--- 	are using the right number.
+--      are using the right number.
 
 main = do
     print $ primeFactors 60
