@@ -77,12 +77,49 @@ primeFactorsMultiplicity n =
         m = map (factorOrder n) p
     in zip p m
 
+ascListLookup :: [(Integer, Integer)] -> Integer -> Integer
+ascListLookup [] k = 0
+ascListLookup (p:ls) k = if fst p == k then snd p else ascListLookup ls k
+
 -- smallestMultiple :: Integer -> Integer
 -- smallestMultiple n = map primeFactorsMultiplicity [1..n]
 
+-- collect :: [(Integer, Integer)] -> [[(Integer, Integer)]]
+-- collect l =
+--     let sorted = sort (\a b -> fst a > fst b) l
+--        in l
+
+multiplicitiesUpTo :: Integer -> [(Integer, Integer)]
+multiplicitiesUpTo n = concat $ map primeFactorsMultiplicity [2..n]
+
+filterFor :: [(Integer, Integer)] -> Integer -> [(Integer, Integer)]
+filterFor l x = filter ((==x) . fst ) l
+
+maxMultiplicities :: Integer -> [(Integer, Integer)]
+maxMultiplicities n =
+    let muls = multiplicitiesUpTo n
+        pfs = filter (\x -> elem x (map fst muls)) [1..n]
+        toMults = (\l -> (map snd) l)
+        --in map (\f -> (f, f)) pfs
+        in map (\f -> (f, maximum (toMults (filterFor muls f)))) pfs
+
+productOfMultiplicities :: [(Integer, Integer)] -> Integer
+productOfMultiplicities l = foldl (\n (a,b) -> a^b * n) 1 l
+
+smallestMultiple :: Integer -> Integer
+smallestMultiple n = productOfMultiplicities (maxMultiplicities n)
+
 main :: IO()
 main = do
-    print $ factors 60
-    print $ primeFactors 60
-    print $ primeFactorsMultiplicity 60
-    print $ map primeFactorsMultiplicity [2..20]
+    print $ factors 180
+    print $ primeFactors 180
+    print $ primeFactorsMultiplicity 180
+    print $ multiplicitiesUpTo 180
+    -- print $ concat $ map primeFactorsMultiplicity [2..20]
+    -- print $ filterFor (multiplicitiesUpTo 180) 2
+    -- print $ filterFor (multiplicitiesUpTo 180) 3
+    -- print $ filterFor (multiplicitiesUpTo 180) 4
+    -- print $ filterFor (multiplicitiesUpTo 180) 5
+    print $ maxMultiplicities 180
+    print $ smallestMultiple 10
+    print $ smallestMultiple 20
