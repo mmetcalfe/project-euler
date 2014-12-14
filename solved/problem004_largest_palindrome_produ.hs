@@ -16,5 +16,6 @@ isPalindrome n = (show n) == (reverse . show $ n)
 maxPalindrome :: Integer -> Integer
 maxPalindrome n = maximum [ x * y | x <- [1..n], y <- [1..n], isPalindrome (x * y)]
 
+main :: IO ()
 main = do
     print $ maxPalindrome 999

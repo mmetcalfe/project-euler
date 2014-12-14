@@ -8,13 +8,6 @@
      Find the sum of all the multiples of 3 or 5 below 1000.
 -}
 
---print(sum([k for k in range(1000) if k % 3 is 0 or k % 5 is 0]))
-
---main = do
---      putStrLn "Hello, what's your name?"
---      name <- getLine
---      putStrLn ("Hey " ++ name ++ ", you rock!")
-
 sum3Or5 :: Integer -> Integer
 sum3Or5 1 = 0
 sum3Or5 n

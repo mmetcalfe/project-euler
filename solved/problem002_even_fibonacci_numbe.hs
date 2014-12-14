@@ -33,10 +33,11 @@ fibsLessThan fl lim =
         else fl
     where nxt = nextFib fl
 
+main :: IO ()
 main = do
     print "Hi."
     print $ fibsLessThan [] 10
-    print $ sum $ fibsLessThan [] 10
     print $ fibsLessThan [] 4000000
-    print $ sum $ fibsLessThan [] 4000000
+    print $ filter even (fibsLessThan [] 4000000)
+    print $ sum $ filter even (fibsLessThan [] 4000000)
 

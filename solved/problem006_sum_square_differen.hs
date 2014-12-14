@@ -12,10 +12,16 @@
 --     Find the difference between the sum of the squares of the first
 -- 	one hundred natural numbers and the square of the sum.
 
--- n = 100
--- nums = range(n + 1)
--- sum_squares = sum([k ** 2 for k in nums])
--- squared_sum = sum([k for k in nums]) ** 2
--- print('Sum of squares:', sum_squares)
--- print('Square of sum:', squared_sum)
--- print('Difference:', squared_sum - sum_squares)
+sumSquares :: Integer -> Integer
+sumSquares n = sum [k^2 | k <- [1 .. n]]
+
+squaredSum :: Integer -> Integer
+squaredSum n = sum [1 .. n] ^ 2
+
+sumSquaredDifference :: Integer -> Integer
+sumSquaredDifference n = squaredSum n - sumSquares n
+
+main :: IO()
+main = do
+    let n = 100
+    print $ sumSquaredDifference n

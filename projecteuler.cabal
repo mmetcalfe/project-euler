@@ -15,10 +15,44 @@ build-type:          Simple
 -- extra-source-files:
 cabal-version:       >=1.10
 
-executable project-euler
-  main-is: problem005_smallest_multip.hs
-  -- other-modules:
-  -- other-extensions:
+executable problem001
+  main-is: problem001_multiples_of_3_and.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem002
+  main-is: problem002_even_fibonacci_numbe.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem003
+  main-is: problem003_largest_prime_fact.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem004
+  main-is: problem004_largest_palindrome_produ.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem005
+  main-is: problem005_smallest_multip.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem006
+  main-is: problem006_sum_square_differen.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved
+  default-language:    Haskell2010
+
+executable problem007
+  main-is: problem007_10001st_pri.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
