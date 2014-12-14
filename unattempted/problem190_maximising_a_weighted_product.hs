@@ -1,0 +1,12 @@
+-- 
+-- Problem 190: Maximising a weighted product
+-- (Published on Friday, 18th April 2008, 10:00 pm; Solved by 2518)
+-- 
+--     Let S_{m} = (x_{1}, x_{2}, ... , x_{m}) be the m-tuple of
+-- 	positive real numbers with x_{1} + x_{2} + ... + x_{m} = m for
+-- 	which P_{m} = x_{1} * x_{2}^{2} * ... * x_{m}^{m} is maximised.
+-- 
+--     For example, it can be verified that [P_{10}] = 4112 ([ ] is the
+-- 	integer part function).
+-- 
+--     Find Σ[P_{m}] for 2 ≤ m ≤ 15.

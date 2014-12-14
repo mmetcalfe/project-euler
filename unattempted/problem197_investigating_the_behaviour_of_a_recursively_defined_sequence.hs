@@ -1,0 +1,12 @@
+-- 
+-- Problem 197: Investigating the behaviour of a recursively defined sequence
+-- (Published on Friday, 6th June 2008, 10:00 pm; Solved by 3185)
+-- 
+--     Given is the function f(x) = ⌊2^{30.403243784-x^{2}}⌋ × 10^{-9}
+-- 	( ⌊ ⌋ is the floor-function),
+-- 
+-- the sequence u_{n} is defined by u_{0} = -1 and u_{n+1} = f(u_{n}).
+-- 
+--     Find u_{n} + u_{n+1} for n = 10^{12}.
+-- 
+-- Give your answer with 9 digits after the decimal point.

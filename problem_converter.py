@@ -11,15 +11,15 @@ def soup_for_problem(number=1):
 
 
 def make_filename(number=1, title='Multiples of 3 and 5'):
-    t = title.lower().replace(' ', '_')
+    t = title.lower().replace(' ', '_').replace('/', '-').replace(':', '_-_').replace('"', '')
 
-    return "problem{0:03}_{1}.py".format(number, t)
+    return "problem{0:03}_{1}.hs".format(number, t)
 
 
 def write_to_file(text_file, line='', indent=0, cont=False, end='\n'):
     comment = line
     if not cont:
-        comment = '# {0}{1}'.format(' ' * indent * 4, comment)
+        comment = '-- {0}{1}'.format(' ' * indent * 4, comment)
 
     text_file.write('{0}{1}'.format(comment, end))
     print(comment, end=end)
@@ -86,6 +86,10 @@ def convert_sup_to_string(element):
 
 def convert_p_to_string(element):
     return '\n\t{}\n'.format(convert_div_to_string(element))
+
+
+def convert_th_to_string(element):
+    return '{}\n'.format(convert_div_to_string(element))
 
 
 def convert_tr_to_string(element):
@@ -161,6 +165,8 @@ def convert_element_to_string(element):
         return convert_p_to_string(element)
     elif tagname == 'tbody':
         return convert_div_to_string(element)
+    elif tagname == 'th':
+        return convert_th_to_string(element)
     elif tagname == 'tr':
         return convert_tr_to_string(element)
     elif tagname == 'td':

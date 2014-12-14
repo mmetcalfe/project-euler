@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Colin Hughes" name="author"/>
+<meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/>
+<meta content="programming,mathematics,problems,puzzles" name="keywords"/>
+<title>Problem 159 - Project Euler</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="themes/default/style_default.css" rel="stylesheet" type="text/css"/>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<div class="noprint" id="nav">
+<ul>
+<li><a accesskey="h" href="about" title="About">About</a></li>
+<li id="current"><a accesskey="1" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="2" href="news" title="News">News</a></li>
+<li><a accesskey="3" href="register" title="Register">Register</a></li>
+<li><a accesskey="4" href="sign_in" title="Sign In">Sign In</a></li>
+</ul>
+</div>
+<div class="noprint" id="logo">
+<div>Project Euler<span>.net</span></div>
+</div>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=9113a"><span class="info" style="cursor:pointer;"><img src="images/icon_lock.png"/><span style="text-align:left;width:250px;right:10px;"><div style="color:#070;font-weight:bold;">You are currently using a secure connection</div>Click icon to use a non-secure connection</span></span></a></div></div></body></html>
+<div id="content">
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/print_page_logo.png" style="border:none;"/></div>
+<h2>Digital root sums of factorisations</h2><div class="info" id="problem_info"><h3>Problem 159</h3><span>Published on Saturday, 30th June 2007, 02:00 pm; Solved by 1899</span></div>
+<div class="problem_content" role="problem">
+<p>A composite number can be factored many different ways.  
+For instance, not including multiplication by one, 24 can be factored in 7 distinct ways:</p>
+<div style="margin-left:50px;">
+24 = 2x2x2x3<br/>
+24 = 2x3x4<br/>
+24 = 2x2x6<br/>
+24 = 4x6<br/>
+24 = 3x8<br/>
+24 = 2x12<br/>
+24 = 24
+</div>
+<p>Recall that the digital root of a number, in base 10, is found by adding together the digits of that number, 
+and repeating that process until a number is arrived at that is less than 10.  
+Thus the digital root of 467 is 8.</p>
+<p>We shall call a Digital Root Sum (DRS) the sum of the digital roots of the individual factors of our number.<br/>
+ The chart below demonstrates all of the DRS values for 24.</p>
+<table align="center" border="1" cellpadding="2" cellspacing="0">
+<tr><th>Factorisation</th><th>Digital Root Sum</th></tr>
+<tr><td><div style="margin-left:20px;">2x2x2x3</div></td>
+<td><div style="text-align:center;">9</div></td></tr>
+<tr><td><div style="margin-left:20px;">2x3x4</div></td>
+<td><div style="text-align:center;">9</div></td></tr>
+<tr><td><div style="margin-left:20px;">2x2x6</div></td>
+<td><div style="text-align:center;">10</div></td></tr>
+<tr><td><div style="margin-left:20px;">4x6</div></td>
+<td><div style="text-align:center;">10</div></td></tr>
+<tr><td><div style="margin-left:20px;">3x8</div></td>
+<td><div style="text-align:center;">11</div></td></tr>
+<tr><td><div style="margin-left:20px;">2x12</div></td>
+<td><div style="text-align:center;">5</div></td></tr>
+<tr><td><div style="margin-left:20px;">24</div></td>
+<td><div style="text-align:center;">6</div></td></tr>
+</table>
+<p>The maximum Digital Root Sum  of 24 is 11.<br/>
+The function mdrs(<var>n</var>) gives the maximum Digital Root Sum of <var>n</var>. So  mdrs(24)=11.<br/>
+Find ∑mdrs(<var>n</var>) for 1 &lt; <var>n</var> &lt; 1,000,000.</p>
+</div><br/>
+<br/></div>
+<div class="noprint" id="footer">
+Project Euler: <a href="copyright">Copyright Information</a> | <a href="privacy">Privacy Policy</a>
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+
+

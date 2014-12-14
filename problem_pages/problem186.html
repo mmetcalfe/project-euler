@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="Colin Hughes" name="author"/><meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/><meta content="programming,mathematics,problems,puzzles" name="keywords"/><title>Problem 186 - Project Euler</title><link href="http://projecteuler.net/favicon.ico" rel="shortcut icon"/><link href="style_main.css" rel="stylesheet" type="text/css"/><link href="style_light.css" rel="stylesheet" type="text/css"/><script type="text/x-mathjax-config">
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Colin Hughes" name="author"/>
+<meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/>
+<meta content="programming,mathematics,problems,puzzles" name="keywords"/>
+<title>Problem 186 - Project Euler</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="themes/default/style_default.css" rel="stylesheet" type="text/css"/>
+<script type="text/x-mathjax-config">
    MathJax.Hub.Config({
       jax: ["input/TeX", "output/HTML-CSS"],
       tex2jax: {
@@ -9,24 +19,30 @@
       },
       "HTML-CSS": { availableFonts: ["TeX"] }
    });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
-</script></head><body>
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script>
+</head>
+<body>
 <div id="container">
+<div id="header">
 <div class="noprint" id="nav">
 <ul>
 <li><a accesskey="h" href="about" title="About">About</a></li>
-<li><a accesskey="1" href="register" title="Register">Register</a></li>
-<li id="current"><a accesskey="2" href="problems" title="Problems">Problems</a></li>
-<li><a accesskey="3" href="login" title="Login">Login</a></li>
+<li id="current"><a accesskey="1" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="2" href="news" title="News">News</a></li>
+<li><a accesskey="3" href="register" title="Register">Register</a></li>
+<li><a accesskey="4" href="sign_in" title="Sign In">Sign In</a></li>
 </ul>
 </div>
-<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=17bcb"><img alt="Use secure connection" src="images/icon_lock.png" title="Use secure connection"/></a></div>
 <div class="noprint" id="logo">
-<img alt="Project Euler .net" src="images/pe_banner_light.png"/>
+<div>Project Euler<span>.net</span></div>
 </div>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=32061"><span class="info" style="cursor:pointer;"><img src="images/icon_lock.png"/><span style="text-align:left;width:250px;right:10px;"><div style="color:#070;font-weight:bold;">You are currently using a secure connection</div>Click icon to use a non-secure connection</span></span></a></div></div></body></html>
 <div id="content">
-<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/pe_banner.png" style="border:none;"/></div>
-<h2>Connectedness of a network.</h2><div class="info" style="cursor:help;width:200px;margin-bottom:10px;"><h3>Problem 186</h3><span style="width:300px;color:#666;">Published on Saturday, 15th March 2008, 05:00 am; Solved by 1495</span></div>
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/print_page_logo.png" style="border:none;"/></div>
+<h2>Connectedness of a network</h2><div class="info" id="problem_info"><h3>Problem 186</h3><span>Published on Saturday, 15th March 2008, 05:00 am; Solved by 1676</span></div>
 <div class="problem_content" role="problem">
 <p>Here are the records from a busy telephone system with one million users:</p>
 <div style="text-align:center;">
@@ -40,15 +56,15 @@
 </table>
 </div>
 <p>The telephone number of the caller and the called number in record n are Caller(n) = S<sub>2n-1</sub> and Called(n) = S<sub>2n</sub> where S<sub>1,2,3,...</sub> come from the "Lagged Fibonacci Generator":</p>
-<p>For 1 <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> k <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br/>
-For 56 <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="vertical-align:middle;" width="10"/> k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
+<p>For 1 ≤ k ≤ 55, S<sub>k</sub> = [100003 - 200003k + 300007k<sup>3</sup>] (modulo 1000000)<br/>
+For 56 ≤ k, S<sub>k</sub> = [S<sub>k-24</sub> + S<sub>k-55</sub>] (modulo 1000000)</p>
 <p>If Caller(n) = Called(n) then the user is assumed to have misdialled and the call fails; otherwise the call is successful.</p>
 <p>From the start of the records, we say that any pair of users X and Y are friends if X calls Y or vice-versa. Similarly, X is a friend of a friend of Z if X is a friend of Y and Y is a friend of Z; and so on for longer chains.</p>
 <p>The Prime Minister's phone number is 524287. After how many successful calls, not counting misdials, will 99% of the users (including the PM) be a friend, or a friend of a friend etc., of the Prime Minister?</p>
 </div><br/>
 <br/></div>
 <div class="noprint" id="footer">
-<a href="copyright">Project Euler Copyright Information</a>
+Project Euler: <a href="copyright">Copyright Information</a> | <a href="privacy">Privacy Policy</a>
 <!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
    <Work rdf:about="">
       <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
@@ -56,5 +72,5 @@ For 56 <img alt="≤" border="0" height="12" src="images/symbol_le.gif" style="v
    </Work>
    <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
 </div>
-</div>
-<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div></body></html>
+
+

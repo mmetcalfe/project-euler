@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Colin Hughes" name="author"/>
+<meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/>
+<meta content="programming,mathematics,problems,puzzles" name="keywords"/>
+<title>Problem 182 - Project Euler</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="themes/default/style_default.css" rel="stylesheet" type="text/css"/>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<div class="noprint" id="nav">
+<ul>
+<li><a accesskey="h" href="about" title="About">About</a></li>
+<li id="current"><a accesskey="1" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="2" href="news" title="News">News</a></li>
+<li><a accesskey="3" href="register" title="Register">Register</a></li>
+<li><a accesskey="4" href="sign_in" title="Sign In">Sign In</a></li>
+</ul>
+</div>
+<div class="noprint" id="logo">
+<div>Project Euler<span>.net</span></div>
+</div>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=7a206"><span class="info" style="cursor:pointer;"><img src="images/icon_lock.png"/><span style="text-align:left;width:250px;right:10px;"><div style="color:#070;font-weight:bold;">You are currently using a secure connection</div>Click icon to use a non-secure connection</span></span></a></div></div></body></html>
+<div id="content">
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/print_page_logo.png" style="border:none;"/></div>
+<h2>RSA encryption</h2><div class="info" id="problem_info"><h3>Problem 182</h3><span>Published on Friday, 15th February 2008, 01:00 pm; Solved by 1491</span></div>
+<div class="problem_content" role="problem">
+<p>The RSA encryption is based on the following procedure:</p>
+<p>Generate two distinct primes <var>p</var> and <var>q</var>.<br/>Compute <var>n=pq</var> and φ=(<var>p</var>-1)(<var>q</var>-1).<br/>
+Find an integer <var>e</var>, 1&lt;<var>e</var>&lt;φ, such that gcd(<var>e</var>,φ)=1.</p>
+<p>A message in this system is a number in the interval [0,<var>n</var>-1].<br/>
+A text to be encrypted is then somehow converted to messages (numbers in the interval [0,<var>n</var>-1]).<br/>
+To encrypt the text,  for each message, <var>m</var>, <var>c</var>=<var>m</var><sup><var>e</var></sup> mod <var>n</var> is calculated.</p>
+<p>To decrypt the text, the following procedure is needed: calculate <var>d</var> such that <var>ed</var>=1 mod φ, then for each encrypted message, <var>c</var>, calculate <var>m=c<sup>d</sup></var> mod <var>n</var>.</p>
+<p>There exist values of <var>e</var> and <var>m</var>  such that <var>m<sup>e</sup></var> mod <var>n=m</var>.<br/>We call messages <var>m</var> for which <var>m<sup>e</sup></var> mod <var>n=m</var> unconcealed messages.</p>
+<p>An issue when choosing <var>e</var> is that there should not be too many unconcealed messages.  <br/>For instance, let <var>p</var>=19 and <var>q</var>=37.<br/>
+Then <var>n</var>=19*37=703 and φ=18*36=648.<br/>
+If we choose <var>e</var>=181, then, although gcd(181,648)=1 it turns out that all possible messages<br/>
+<var>m</var> (0≤<var>m</var>≤<var>n</var>-1) are unconcealed when calculating <var>m<sup>e</sup></var> mod <var>n</var>.<br/>
+For any valid choice of <var>e</var> there exist some unconcealed messages.<br/>
+It's important that the number of unconcealed messages is at a minimum.</p>
+<p>Choose <var>p</var>=1009 and <var>q</var>=3643.<br/>
+Find the sum of all values of <var>e</var>, 1&lt;<var>e</var>&lt;φ(1009,3643) and gcd(<var>e</var>,φ)=1, so that the number of unconcealed messages for this value of <var>e</var> is at a minimum.</p>
+</div><br/>
+<br/></div>
+<div class="noprint" id="footer">
+Project Euler: <a href="copyright">Copyright Information</a> | <a href="privacy">Privacy Policy</a>
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+
+

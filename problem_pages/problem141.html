@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="Colin Hughes" name="author"/><meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/><meta content="programming,mathematics,problems,puzzles" name="keywords"/><title>Problem 141 - Project Euler</title><link href="http://projecteuler.net/favicon.ico" rel="shortcut icon"/><link href="style_main.css" rel="stylesheet" type="text/css"/><link href="style_light.css" rel="stylesheet" type="text/css"/><script type="text/x-mathjax-config">
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Colin Hughes" name="author"/>
+<meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/>
+<meta content="programming,mathematics,problems,puzzles" name="keywords"/>
+<title>Problem 141 - Project Euler</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="themes/default/style_default.css" rel="stylesheet" type="text/css"/>
+<script type="text/x-mathjax-config">
    MathJax.Hub.Config({
       jax: ["input/TeX", "output/HTML-CSS"],
       tex2jax: {
@@ -9,24 +19,30 @@
       },
       "HTML-CSS": { availableFonts: ["TeX"] }
    });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
-</script></head><body>
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script>
+</head>
+<body>
 <div id="container">
+<div id="header">
 <div class="noprint" id="nav">
 <ul>
 <li><a accesskey="h" href="about" title="About">About</a></li>
-<li><a accesskey="1" href="register" title="Register">Register</a></li>
-<li id="current"><a accesskey="2" href="problems" title="Problems">Problems</a></li>
-<li><a accesskey="3" href="login" title="Login">Login</a></li>
+<li id="current"><a accesskey="1" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="2" href="news" title="News">News</a></li>
+<li><a accesskey="3" href="register" title="Register">Register</a></li>
+<li><a accesskey="4" href="sign_in" title="Sign In">Sign In</a></li>
 </ul>
 </div>
-<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=61d60"><img alt="Use secure connection" src="images/icon_lock.png" title="Use secure connection"/></a></div>
 <div class="noprint" id="logo">
-<img alt="Project Euler .net" src="images/pe_banner_light.png"/>
+<div>Project Euler<span>.net</span></div>
 </div>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=7c3fd"><span class="info" style="cursor:pointer;"><img src="images/icon_lock.png"/><span style="text-align:left;width:250px;right:10px;"><div style="color:#070;font-weight:bold;">You are currently using a secure connection</div>Click icon to use a non-secure connection</span></span></a></div></div></body></html>
 <div id="content">
-<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/pe_banner.png" style="border:none;"/></div>
-<h2>Investigating progressive numbers, <i>n</i>, which are also square.</h2><div class="info" style="cursor:help;width:200px;margin-bottom:10px;"><h3>Problem 141</h3><span style="width:300px;color:#666;">Published on Saturday, 17th February 2007, 05:00 am; Solved by 1765</span></div>
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/print_page_logo.png" style="border:none;"/></div>
+<h2>Investigating progressive numbers, <i>n</i>, which are also square</h2><div class="info" id="problem_info"><h3>Problem 141</h3><span>Published on Saturday, 17th February 2007, 05:00 am; Solved by 2082</span></div>
 <div class="problem_content" role="problem">
 <p>A positive integer, <i>n</i>, is divided by <i>d</i> and the quotient and remainder are <i>q</i> and <i>r</i> respectively. In addition <i>d</i>, <i>q</i>, and <i>r</i> are consecutive positive integer terms in a geometric sequence, but not necessarily in that order.</p>
 <p>For example, 58 divided by 6 has quotient 9 and remainder 4. It can also be seen that 4, 6, 9 are consecutive terms in a geometric sequence (common ratio 3/2).<br/>
@@ -36,7 +52,7 @@ We will call such numbers, <i>n</i>, progressive.</p>
 </div><br/>
 <br/></div>
 <div class="noprint" id="footer">
-<a href="copyright">Project Euler Copyright Information</a>
+Project Euler: <a href="copyright">Copyright Information</a> | <a href="privacy">Privacy Policy</a>
 <!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
    <Work rdf:about="">
       <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
@@ -44,5 +60,5 @@ We will call such numbers, <i>n</i>, progressive.</p>
    </Work>
    <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
 </div>
-</div>
-<div style="height:1px;">                                                                                                                                                                                                                                                                                                            </div></body></html>
+
+

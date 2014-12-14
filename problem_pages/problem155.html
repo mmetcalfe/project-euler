@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Colin Hughes" name="author"/>
+<meta content="A website dedicated to the fascinating world of mathematics and programming" name="description"/>
+<meta content="programming,mathematics,problems,puzzles" name="keywords"/>
+<title>Problem 155 - Project Euler</title>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="themes/default/style_default.css" rel="stylesheet" type="text/css"/>
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+         inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+         displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+         processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+   });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<div class="noprint" id="nav">
+<ul>
+<li><a accesskey="h" href="about" title="About">About</a></li>
+<li id="current"><a accesskey="1" href="problems" title="Problems">Problems</a></li>
+<li><a accesskey="2" href="news" title="News">News</a></li>
+<li><a accesskey="3" href="register" title="Register">Register</a></li>
+<li><a accesskey="4" href="sign_in" title="Sign In">Sign In</a></li>
+</ul>
+</div>
+<div class="noprint" id="logo">
+<div>Project Euler<span>.net</span></div>
+</div>
+</div>
+<div id="info_panel"><a href="rss2_euler.xml"><img alt="RSS Feed" src="images/icon_rss.png" title="RSS Feed"/></a><a href="secure=eb672"><span class="info" style="cursor:pointer;"><img src="images/icon_lock.png"/><span style="text-align:left;width:250px;right:10px;"><div style="color:#070;font-weight:bold;">You are currently using a secure connection</div>Click icon to use a non-secure connection</span></span></a></div></div></body></html>
+<div id="content">
+<div class="print" style="text-align:center;"><img alt="projecteuler.net" src="images/print_page_logo.png" style="border:none;"/></div>
+<h2>Counting Capacitor Circuits</h2><div class="info" id="problem_info"><h3>Problem 155</h3><span>Published on Saturday, 19th May 2007, 02:00 am; Solved by 1970</span></div>
+<div class="problem_content" role="problem">
+<p>An electric circuit uses exclusively identical capacitors of the same value C.
+<br/>
+The capacitors can be connected in series or in parallel to form sub-units, which can then be connected in series or in parallel with other capacitors or other sub-units to form larger sub-units, and so on up to a final circuit.</p>
+<p>Using this simple procedure and up to <var>n</var> identical capacitors, we can make circuits having a range of different total capacitances. For example, using up to <var>n</var>=3 capacitors of 60 <img alt="" height="21" src="project/images/p155_capsmu.gif" style="vertical-align:middle;" width="12"/>F each, we can obtain the following 7 distinct total capacitance values: </p>
+<div style="text-align:center;"><img alt="" height="557" src="project/images/p155_capacitors1.gif" width="387"/></div>
+<p>If we denote by <var>D</var>(<var>n</var>) the number of distinct total capacitance values we can obtain when using up to <var>n</var> equal-valued capacitors and the simple procedure described above, we have: <var>D</var>(1)=1, <var>D</var>(2)=3, <var>D</var>(3)=7 ...</p>
+<p>Find <var>D</var>(18).</p>
+<p><i>Reminder :</i> When connecting capacitors C<sub>1</sub>, C<sub>2</sub> etc in parallel, the total capacitance is C<sub>T</sub> = C<sub>1</sub> + C<sub>2</sub> +...,
+<br/>
+whereas when connecting them in series, the overall capacitance is given by:
+<img alt="" height="38" src="project/images/p155_capsform.gif" style="vertical-align:middle;" width="127"/></p>
+</div><br/>
+<br/></div>
+<div class="noprint" id="footer">
+Project Euler: <a href="copyright">Copyright Information</a> | <a href="privacy">Privacy Policy</a>
+<!--/Creative Commons License--><!-- <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <Work rdf:about="">
+      <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/" />
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   </Work>
+   <License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/><permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/><requires rdf:resource="http://web.resource.org/cc/ShareAlike"/></License></rdf:RDF> -->
+</div>
+
+
