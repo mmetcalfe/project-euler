@@ -16,61 +16,61 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 executable problem001
-  main-is: problem001_multiples_of_3_and.hs
+  main-is: problem001_multiples_of_3_and_5.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem002
-  main-is: problem002_even_fibonacci_numbe.hs
+  main-is: problem002_even_fibonacci_numbers.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem003
-  main-is: problem003_largest_prime_fact.hs
+  main-is: problem003_largest_prime_factor.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem004
-  main-is: problem004_largest_palindrome_produ.hs
+  main-is: problem004_largest_palindrome_product.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem005
-  main-is: problem005_smallest_multip.hs
+  main-is: problem005_smallest_multiple.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem006
-  main-is: problem006_sum_square_differen.hs
+  main-is: problem006_sum_square_difference.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved
   default-language:    Haskell2010
 
 executable problem007
-  main-is: problem007_10001st_pri.hs
+  main-is: problem007_10001st_prime.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
 
 executable problem008
-  main-is: problem008_largest_product_in_a_seri.hs
+  main-is: problem008_largest_product_in_a_series.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
 
 executable problem009
-  main-is: problem008_largest_product_in_a_seri.hs
+  main-is: problem009_special_pythagorean_triplet.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
 
 executable problem010
-  main-is: problem010_summation_of_prim.hs
+  main-is: problem010_summation_of_primes.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
