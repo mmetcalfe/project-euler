@@ -8,3 +8,5 @@
 -- 
 -- <p class="note">Note: This problem has been changed recently, please
 -- 	check that you are using the right parameters.</p>
+
+main = print "hi"
