@@ -1,10 +1,10 @@
--- 
+--
 -- Problem 8: Largest product in a series
 -- (Published on Friday, 11th January 2002, 06:00 pm; Solved by 181656)
--- 
+--
 --     The four adjacent digits in the 1000-digit number that have the
 -- 	greatest product are 9 × 9 × 8 × 9 = 5832.
--- 
+--
 --         73167176531330624919225119674426574742355349194934
 --         96983520312774506326239578318016984801869478851843
 --         85861560789112949495459501737958331952853208805511
@@ -58,11 +58,17 @@ takeUntil delim (h:str)
         let (r, rs) = takeUntil delim str
         in (h:r, rs)
 
+splitOn :: Char -> String -> [String]
+splitOn _ "" = []
+splitOn delim str =
+  let (t, r) = takeUntil delim str
+      l = splitOn delim r
+  in if t == "" then l else t : l
 
--- splitOn :: Char -> String -> [String]
--- splitOn delim str = splitOn' delim str []
--- splitOn' :: Char -> String -> [String] -> [String]
--- splitOn' delim str lst =  takeUntil delim str : lst
+digits :: String -> [Integer]
+digits = map ((read::String -> Integer) . (:[]))
 
 -- main = print $ splitOn '0' string
-main = print $ takeUntil '0' string
+main = do
+  let n = 13
+  print $ map digits (filter ((>=n) . length) (splitOn '0' string))
