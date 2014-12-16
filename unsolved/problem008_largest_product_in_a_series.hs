@@ -68,7 +68,16 @@ splitOn delim str =
 digits :: String -> [Integer]
 digits = map ((read::String -> Integer) . (:[]))
 
+sequentialProducts :: Int -> [Integer] -> [Integer]
+sequentialProducts n l
+  | length l < n = []
+  | otherwise = ((product . take n) l) : sequentialProducts n (drop n l)
+
 -- main = print $ splitOn '0' string
 main = do
   let n = 13
-  print $ map digits (filter ((>=n) . length) (splitOn '0' string))
+      nonZeroSeqs = splitOn '0' string
+      longSeqs = filter ((>=n) . length) nonZeroSeqs
+      longSeqDigits = map digits longSeqs
+      seqProds = concat $ map (sequentialProducts n) longSeqDigits
+  print $ maximum seqProds
