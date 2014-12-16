@@ -69,9 +69,9 @@ digits :: String -> [Integer]
 digits = map ((read::String -> Integer) . (:[]))
 
 sequentialProducts :: Int -> [Integer] -> [Integer]
-sequentialProducts n l
+sequentialProducts n l@(_:ls)
   | length l < n = []
-  | otherwise = ((product . take n) l) : sequentialProducts n (drop n l)
+  | otherwise = ((product . take n) l) : sequentialProducts n ls
 
 -- main = print $ splitOn '0' string
 main = do
@@ -80,4 +80,5 @@ main = do
       longSeqs = filter ((>=n) . length) nonZeroSeqs
       longSeqDigits = map digits longSeqs
       seqProds = concat $ map (sequentialProducts n) longSeqDigits
-  print $ maximum seqProds
+      in print $ maximum seqProds
+  print $ sequentialProducts 3 [1..10]
