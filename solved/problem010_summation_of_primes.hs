@@ -26,10 +26,15 @@
 -- print $ l
 -- print $ sum l
 
-filterPrimes' l k = filterPrimes'
-filterPrimes l = filterPrimes' l 2
+filterPrimes' :: [Integer] -> Integer -> [Integer]
+filterPrimes' l k
+  | k^2 > last l = l
+  | otherwise = filterPrimes' [x | x <- l, x < k^2 || x `mod` k /= 0] (k+2)
+
+filterPrimes :: [Integer] -> [Integer]
+filterPrimes l = filterPrimes' l 3
 
 main = do
-  let l = filterPrimes [2..100]
+  let l = filterPrimes (2 : [3, 5..2000000])
   print l
   print $ sum l
