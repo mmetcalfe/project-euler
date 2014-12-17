@@ -9,19 +9,27 @@
 -- <p class="note">Note: This problem has been changed recently, please
 -- 	check that you are using the right parameters.</p>
 
-primeSieve :: Integer -> [Integer] -> Integer -> [Integer]
-primeSieve n l k
-  | n < k = l
-  | otherwise =
-    let factorBound = ceiling $ sqrt $ (fromIntegral k) :: Integer
-        isFactor = (==0) . (k`mod`)
-        isPrime = not $ any isFactor (filter (<=factorBound) l)
-        nextL = if isPrime then l ++ [k] else l
-      in primeSieve n nextL (k+2)
-primesBelow :: Integer -> [Integer]
-primesBelow n = primeSieve n [2, 3, 5] 7
+-- primeSieve :: Integer -> [Integer] -> Integer -> [Integer]
+-- primeSieve n l k
+--   | n < k = l
+--   | otherwise =
+--     let factorBound = ceiling $ sqrt $ (fromIntegral k) :: Integer
+--         isFactor = (==0) . (k`mod`)
+--         isPrime = not $ any isFactor (filter (<=factorBound) l)
+--         nextL = if isPrime then l ++ [k] else l
+--       in primeSieve n nextL (k+2)
+-- primesBelow :: Integer -> [Integer]
+-- primesBelow n = primeSieve n [2, 3, 5] 7
+
+-- main = do
+-- let l =  primesBelow 1000
+-- print $ l
+-- print $ sum l
+
+filterPrimes' l k = filterPrimes'
+filterPrimes l = filterPrimes' l 2
 
 main = do
-  let l =  primesBelow 1000
-  print $ l
+  let l = filterPrimes [2..100]
+  print l
   print $ sum l
