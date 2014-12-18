@@ -1,4 +1,5 @@
-module Primes (isFactor, isPrime, isPrimeFactor) where
+module Primes where
+-- module Primes (isFactor, isPrime, isPrimeFactor, primeFactors, primeFactorsMultiplicity) where
 
 isFactor :: Integer -> Integer -> Bool
 isFactor n k = mod n k == 0
@@ -16,12 +17,16 @@ firstPrimeFactor :: Integer -> Integer -> Integer
 firstPrimeFactor n k
     | isPrimeFactor n k = k
     | k <= n = firstPrimeFactor n (k + 1)
+    | otherwise = error $ (show n) ++ " has no prime factors >= " ++ (show k)
 
 primeFactors :: Integer -> [Integer]
 primeFactors n
-    | n == f = f : []
-    | otherwise = f : primeFactors (div n f)
-    where f = firstPrimeFactor n 1
+    | n == 1 = []
+    | n == f = [f]
+    | otherwise =
+      let r = factorOrder n f
+      in f : primeFactors (div n (f^r))
+    where f = firstPrimeFactor n 2
 
 factorOrder' :: Integer -> Integer -> Integer -> Integer
 factorOrder' n f k = if isFactor n v then factorOrder' n f k' else k
