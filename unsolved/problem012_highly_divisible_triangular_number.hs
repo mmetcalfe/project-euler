@@ -28,8 +28,19 @@ import Primes
 triangle :: Integer -> Integer
 triangle k = k * (k+1) `div` 2
 
+numFactors :: [(Integer, Integer)] -> Integer
+numFactors l = sum $ map (succ . snd) l
+
+firstTriangleNumberWithOverNDivisors :: Integer -> Integer -> Integer
+firstTriangleNumberWithOverNDivisors n k =
+    let a = if odd k then k else div k 2
+        b = if odd k then div (k+1) 2 else (k+1)
+        l = concat $ map primeFactorsMultiplicity [a, b]
+        d = numFactors l
+    in if d > n then k else firstTriangleNumberWithOverNDivisors n (k+1)
+
 main =
-  let k = 664
+  let k = 147455
       n = if odd k then k else div k 2
       m = if odd k then div (k+1) 2 else (k+1)
       l = concat $ map primeFactorsMultiplicity [m, n]
@@ -37,4 +48,49 @@ main =
     print $ triangle k
     print $ primeFactorsMultiplicity n
     print $ primeFactorsMultiplicity m
+    print $ numFactors l
     print $ l
+    print $ firstTriangleNumberWithOverNDivisors 24 1
+
+
+
+
+
+
+
+
+-- 2^5 - (2^3) * (2^2 / 2) - (2^3 / 2) * (2^2) + (2^3 / 2) * (2^2 / 2)
+-- a a a b b |       |
+-- -------------------
+--           |       |
+-- 1         | a     |
+--   1       |       | -
+-- 1 1       | aa    |
+--     1     |       | -
+-- 1   1     |       | -
+--   1 1     |       | -
+-- 1 1 1     | aaa   |
+--       1   |    b  |
+-- 1     1   | a  b  |
+--   1   1   |       | -
+-- 1 1   1   | aa b  |
+--     1 1   |       | -
+-- 1   1 1   |       | -
+--   1 1 1   |       | -
+-- 1 1 1 1   | aaab  |
+--         1 |       |   -
+-- 1       1 |       |   -
+--   1     1 |       | - - +
+-- 1 1     1 |       |   -
+--     1   1 |       | - - +
+-- 1   1   1 |       | - - +
+--   1 1   1 |       | - - +
+-- 1 1 1   1 |       |   -
+--       1 1 |    bb |
+-- 1     1 1 | a  bb |
+--   1   1 1 |       | -
+-- 1 1   1 1 | aa bb |
+--     1 1 1 |       | -
+-- 1   1 1 1 |       | -
+--   1 1 1 1 |       | -
+-- 1 1 1 1 1 | aaabb |
