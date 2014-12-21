@@ -28,35 +28,31 @@ import Primes
 triangle :: Integer -> Integer
 triangle k = k * (k+1) `div` 2
 
-numFactors :: [(Integer, Integer)] -> Integer
-numFactors l = sum $ map (succ . snd) l
+numFactorsFromPrimes :: [(Integer, Integer)] -> Integer
+numFactorsFromPrimes l = product $ map (succ . snd) l
+
+numFactors :: Integer -> Integer
+numFactors n = numFactorsFromPrimes $ primeFactorsMultiplicity n
+
 
 firstTriangleNumberWithOverNDivisors :: Integer -> Integer -> Integer
 firstTriangleNumberWithOverNDivisors n k =
-    let a = if odd k then k else div k 2
+    let a = if odd k then k           else div k 2
         b = if odd k then div (k+1) 2 else (k+1)
-        l = concat $ map primeFactorsMultiplicity [a, b]
-        d = numFactors l
+        d = numFactors a * numFactors b
+--         l = concat $ map primeFactorsMultiplicity [a, b]
+--         d = numFactorsFromPrimes l
     in if d > n then k else firstTriangleNumberWithOverNDivisors n (k+1)
 
 main =
-  let k = 147455
-      n = if odd k then k else div k 2
-      m = if odd k then div (k+1) 2 else (k+1)
-      l = concat $ map primeFactorsMultiplicity [m, n]
+  let n = 500
+      k = firstTriangleNumberWithOverNDivisors n 1
+      t = triangle k
   in do
-    print $ triangle k
-    print $ primeFactorsMultiplicity n
-    print $ primeFactorsMultiplicity m
-    print $ numFactors l
-    print $ l
-    print $ firstTriangleNumberWithOverNDivisors 24 1
-
-
-
-
-
-
+    print $ "First triangle number with more than " ++ show n ++ " divisors"
+    print $ "T_" ++ show k ++ " = " ++ show t
+    print $ primeFactorsMultiplicity t
+    print $ numFactors t
 
 
 -- 2^5 - (2^3) * (2^2 / 2) - (2^3 / 2) * (2^2) + (2^3 / 2) * (2^2 / 2)
