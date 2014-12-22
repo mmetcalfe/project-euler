@@ -21,3 +21,25 @@
 -- 
 --     *NOTE:* Once the chain starts the terms are allowed to go above
 -- 	one million.
+
+import Data.List
+import Data.Ord
+
+collatz :: Integer -> Integer
+collatz n
+    | even n    = div n 2
+    | otherwise = 3*n + 1
+
+hailstone :: Integer -> [Integer]
+hailstone 1 = [1]
+hailstone n = n : (hailstone . collatz) n
+
+mapInputs :: (Integer -> Integer) -> [Integer] -> [(Integer, Integer)]
+mapInputs f l = zip l (map f l)
+
+main :: IO ()
+main = do
+    let n = 1000000
+    print $ collatz n
+    print $ hailstone n
+    print $ maximumBy (comparing snd) (mapInputs (fromIntegral . length . hailstone) [1..n-1])
