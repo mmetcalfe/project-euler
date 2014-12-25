@@ -36,6 +36,7 @@
 
 import qualified Data.List.Split as Split
 
+stringGrid :: [String]
 stringGrid =
        ["08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08"
        ,"49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00"
@@ -57,14 +58,38 @@ stringGrid =
        ,"20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16"
        ,"20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54"
        ,"01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48"]
+grid :: [[Integer]]
 grid = map (map read . Split.splitOn " " :: String -> [Integer]) stringGrid
 
+skewedGrid :: Int -> [[Integer]]
 skewedGrid offset =
   let s = length grid
       o = abs offset
       lengths = if offset > 0 then [0..s-1] else reverse [0..s-1]
       prefixes = map (\x -> replicate (x * o) 0) lengths
-  -- in map (uncurry . (++)) (zip prefixes grid)
-  in map (\(a,b) -> take s (a ++ b)) (zip prefixes grid)
+--   in map (uncurry (++)) (zip prefixes grid)
+--   in map (\(a,b) -> take s (a ++ b)) (zip prefixes grid)
+  in zipWith (++) prefixes grid
 
-main = print $ skewedGrid (-1)
+transpose :: [[Integer]] -> [[Integer]]
+transpose m
+    | all null m = []
+    | otherwise =
+        let (col, m') = unzip $ map (splitAt 1) m
+        in concat col : transpose m'
+
+consecutiveProducts :: Int -> [Integer] -> [Integer]
+consecutiveProducts n l
+    | length l < n = [0]
+    | otherwise = product (take n l) : consecutiveProducts n (drop 1 l)
+
+main :: IO ()
+main = do
+    let rowsMax = maximum $ map (maximum . consecutiveProducts 4) (transpose grid)
+    let colsMax = maximum $ map (maximum . consecutiveProducts 4) (transpose grid)
+    let tlbrDiagsMax = maximum $ map (maximum . consecutiveProducts 4) (transpose (skewedGrid (-1)))
+    let trblDiagsMax = maximum $ map (maximum . consecutiveProducts 4) (transpose (skewedGrid 1))
+    print $ maximum [rowsMax, colsMax, tlbrDiagsMax, trblDiagsMax]
+--     print $ ((skewedGrid (-1)))
+--     print $ (transpose (skewedGrid (-1)))
+--     mapM_ print (skewedGrid (-1))
