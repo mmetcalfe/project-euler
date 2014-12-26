@@ -9,3 +9,11 @@
 -- 	+ 0 = 27.
 -- 
 --     Find the sum of the digits in the number 100!
+
+factorial :: Integer -> Integer
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
+
+main = do
+    let s = factorial 100
+    print $ sum (map (read . (:[])) (show s) :: [Integer])

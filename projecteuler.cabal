@@ -118,3 +118,21 @@ executable problem017
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+
+executable problem018
+  main-is: problem018_maximum_path_sum.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem019
+  main-is: problem019_counting_sundays.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem020
+  main-is: problem020_factorial_digit_sum.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
