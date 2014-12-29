@@ -120,10 +120,11 @@ executable problem017
   default-language:    Haskell2010
 
 executable problem018
-  main-is: problem018_maximum_path_sum.hs
+  main-is: problem018_maximum_path_sum_i.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+  build-depends: split
 
 executable problem019
   main-is: problem019_counting_sundays.hs
