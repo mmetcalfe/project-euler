@@ -9,9 +9,11 @@
 -- 
 --     A number n is called deficient if the sum of its proper divisors
 -- 	is less than n and it is called abundant if this sum exceeds n.
---  <p>A number whose proper divisors are less than the number is
+--
+--      A number whose proper divisors are less than the number is
 -- 	called deficient and a number whose proper divisors exceed the
--- 	number is called abundant.</p>
+-- 	number is called abundant.
+--
 --     As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16,
 -- 	the smallest number that can be written as the sum of two abundant
 -- 	numbers is 24. By mathematical analysis, it can be shown that all

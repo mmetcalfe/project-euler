@@ -6,3 +6,6 @@
 -- 	26.
 -- 
 --     What is the sum of the digits of the number 2^{1000}?
+
+main :: IO ()
+main = print $ sum $ map (read . (:[])) (show (2^1000))
