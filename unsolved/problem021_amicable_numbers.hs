@@ -13,3 +13,25 @@
 -- 	of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.
 -- 
 --     Evaluate the sum of all the amicable numbers under 10000.
+
+import Primes
+
+divisors :: Integer -> [Integer]
+divisors n = filter ((== 0) . mod n) [1 .. div n 2]
+
+
+amicableSibling = sum . divisors
+
+
+isAbundant :: Integer -> Integer -> Bool
+isAbundant n = (>n) . sum . divisors
+
+isLowerAmicable n =
+    let s = (sum . divisors) n
+        if s > n
+            then False
+            else
+
+main = do
+    let n = 100
+    print $ divisors 100
