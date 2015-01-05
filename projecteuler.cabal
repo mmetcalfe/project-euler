@@ -82,7 +82,7 @@ executable problem011
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
   build-depends: split
-  
+
 executable problem012
   main-is: problem012_highly_divisible_triangular_number.hs
   build-depends:       base >=4.7 && <4.8
@@ -149,7 +149,8 @@ executable problem022
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
-
+  build-depends: split
+  
 executable problem023
   main-is: problem023_non-abundant_sums.hs
   build-depends:       base >=4.7 && <4.8
