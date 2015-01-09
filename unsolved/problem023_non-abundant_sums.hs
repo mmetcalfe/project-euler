@@ -44,9 +44,9 @@ isAbundant n = ((>n) . sum . divisors) n
 abundants :: [Integer]
 abundants = filter isAbundant [1..]
 
-nextAbundantSum n =
-  let l = takeWhile (<=n) abundants
-
+abundantsBelow n = takeWhile (<=n) abundants
 
 main = do
-  print $ takeWhile (<=28123) abundants
+  let n = 100
+  let sums = [a + b | a <- abundantsBelow n, b <- abundantsBelow n]
+  print $ filter (not . flip elem sums) [1..n]
