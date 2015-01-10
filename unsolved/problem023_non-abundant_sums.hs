@@ -54,11 +54,9 @@ deficients = filter isDeficient [1..]
 perfects :: [Integer]
 perfects = filter isPerfect [1..]
 
--- abundants n =
---   let l = takeWhile (<=n) abundants
-
+abundantsBelow n = takeWhile (<=n) abundants
 
 main = do
---   print $ takeWhile (<=9000) perfects
---   print $ takeWhile (<=28123) abundants
---   print $ takeWhile (<=28123) perfects
+  let n = 100
+  let sums = [a + b | a <- abundantsBelow n, b <- abundantsBelow n]
+  print $ filter (not . flip elem sums) [1..n]
