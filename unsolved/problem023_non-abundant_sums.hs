@@ -31,22 +31,34 @@ isDivisor n = (==0) . (mod n)
 divisorPairs :: Integer -> [(Integer,Integer)]
 divisorPairs n = map (\k -> (k, div n k)) $ filter (isDivisor n) [1 .. floor $ sqrt (fromIntegral n)]
 
-divisors n = concat $ map (\(a,b) ->
-                    if a == b
+divisors n = concatMap (\(a,b) ->
+                    if (a == b) || (b == n)
                       then [a]
-                      else if b == n
-                        then [a]
-                        else [a, b]) (divisorPairs n)
+                      else [a, b]) (divisorPairs n)
 
 isAbundant :: Integer -> Bool
 isAbundant n = ((>n) . sum . divisors) n
 
+isDeficient :: Integer -> Bool
+isDeficient n = ((<n) . sum . divisors) n
+
+isPerfect :: Integer -> Bool
+isPerfect n = ((==n) . sum . divisors) n
+
 abundants :: [Integer]
 abundants = filter isAbundant [1..]
 
-nextAbundantSum n =
-  let l = takeWhile (<=n) abundants
+deficients :: [Integer]
+deficients = filter isDeficient [1..]
+
+perfects :: [Integer]
+perfects = filter isPerfect [1..]
+
+-- abundants n =
+--   let l = takeWhile (<=n) abundants
 
 
 main = do
-  print $ takeWhile (<=28123) abundants
+--   print $ takeWhile (<=9000) perfects
+--   print $ takeWhile (<=28123) abundants
+--   print $ takeWhile (<=28123) perfects
