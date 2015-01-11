@@ -26,11 +26,13 @@
 --     Find the sum of all the positive integers which cannot be
 -- 	written as the sum of two abundant numbers.
 
-isDivisor n = (==0) . (mod n)
+isDivisor :: Integer -> Integer -> Bool
+isDivisor n = (==0) . mod n
 
 divisorPairs :: Integer -> [(Integer,Integer)]
 divisorPairs n = map (\k -> (k, div n k)) $ filter (isDivisor n) [1 .. floor $ sqrt (fromIntegral n)]
 
+divisors :: Integer -> [Integer]
 divisors n = concatMap (\(a,b) ->
                     if (a == b) || (b == n)
                       then [a]
@@ -39,24 +41,52 @@ divisors n = concatMap (\(a,b) ->
 isAbundant :: Integer -> Bool
 isAbundant n = ((>n) . sum . divisors) n
 
-isDeficient :: Integer -> Bool
-isDeficient n = ((<n) . sum . divisors) n
-
-isPerfect :: Integer -> Bool
-isPerfect n = ((==n) . sum . divisors) n
-
 abundants :: [Integer]
 abundants = filter isAbundant [1..]
 
-deficients :: [Integer]
-deficients = filter isDeficient [1..]
+-- isDeficient :: Integer -> Bool
+-- isDeficient n = ((<n) . sum . divisors) n
+-- isPerfect :: Integer -> Bool
+-- isPerfect n = ((==n) . sum . divisors) n
+-- deficients :: [Integer]
+-- deficients = filter isDeficient [1..]
+-- perfects :: [Integer]
+-- perfects = filter isPerfect [1..]
 
-perfects :: [Integer]
-perfects = filter isPerfect [1..]
-
+abundantsBelow :: Integer -> [Integer]
 abundantsBelow n = takeWhile (<=n) abundants
 
+isSum :: [Integer] -> Integer -> Bool
+isSum [] _ = False
+isSum l n
+    | s == n = True
+    | s > n = isSum (init l) n
+    | s < n = isSum (tail l) n
+    where s = head l + last l
+
+isAbundantSum :: Integer -> Bool
+isAbundantSum n =
+    let l = abundantsBelow n
+    in isSum l n
+
+isSumLR :: [Integer] -> [Integer] -> Integer -> Bool
+isSumLR [] _ _ = False
+isSumLR _ [] _ = False
+isSumLR l r n
+    | head l > head r = False
+    | s == n = True
+    | s > n = isSumLR l (tail r) n
+    | s < n = isSumLR (tail l) r n
+    where s = head l + head r
+
+isAbundantSumLR :: Integer -> Bool
+isAbundantSumLR n =
+    let l = abundantsBelow n
+        r = reverse l
+    in isSumLR l r n
+
 main = do
-  let n = 100
-  let sums = [a + b | a <- abundantsBelow n, b <- abundantsBelow n]
-  print $ filter (not . flip elem sums) [1..n]
+  let n = 28123
+      sums = filter (not . isAbundantSumLR) [1..n]
+  print sums
+  print $ sum sums
