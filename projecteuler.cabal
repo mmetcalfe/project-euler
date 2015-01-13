@@ -150,7 +150,7 @@ executable problem022
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
   build-depends: split
-  
+
 executable problem023
   main-is: problem023_non-abundant_sums.hs
   build-depends:       base >=4.7 && <4.8
@@ -165,6 +165,36 @@ executable problem024
 
 executable problem025
   main-is: problem025_1000-digit_fibonacci_number.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem026
+  main-is: problem026_reciprocal_cycles.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem027
+  main-is: problem027_quadratic_primes.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem028
+  main-is: problem028_number_spiral_diagonals.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem029
+  main-is: problem029_distinct_powers.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem030
+  main-is: problem030_digit_fifth_powers.hs
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
