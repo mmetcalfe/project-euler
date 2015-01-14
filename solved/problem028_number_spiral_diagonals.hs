@@ -21,5 +21,7 @@
 --     What is the sum of the numbers on the diagonals in a 1001 by
 -- 	1001 spiral formed in the same way?
 
-triangle :: Integer -> Integer
-triangle k = k * (k+1) `div` 2
+corners n = let k = 2*n - 1
+            in 4*k^2 - 6*k + 6
+
+main = print $ 1 + sum (map corners [2..501])
