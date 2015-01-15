@@ -1,7 +1,7 @@
--- 
+--
 -- Problem 31: Coin sums
 -- (Published on Friday, 22nd November 2002, 06:00 pm; Solved by 44625)
--- 
+--
 --     In England the currency is made up of pound, £, and pence, p,
 -- 	and there are eight coins in general circulation:
 -- 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
@@ -9,3 +9,7 @@
 -- 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
 --     How many different ways can £2 be made using any number of
 -- 	coins?
+
+-- num solutions to integer linear program:
+-- 1a + 2b + 5c + 10d + 20e + 50f + 100g + 200g = 200
+-- a,b,c,d,e,f,g >= 0
