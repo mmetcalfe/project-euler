@@ -35,20 +35,40 @@ hasRoots k n
         rc = ceiling r
         rf = floor r
 
+hasNoRoots :: Integer -> Bool
 hasNoRoots = not . hasRoots 2
 
+powers :: Integer -> [Integer]
 powers n = map (n^) [1..]
 
+powersBelow :: Integer -> Integer -> [Integer]
 powersBelow _ 1 = [1]
 powersBelow k n = takeWhile ((<k).(n^)) [1..]
--- powersBelow k n = takeWhile ((<k)) (powers n)
+
+actualPowersBelow :: Integer -> Integer -> [Integer]
+actualPowersBelow _ 1 = [1]
+actualPowersBelow k n = takeWhile (<k) (powers n)
 
 partitionPowers :: Integer -> [(Integer, [Integer])]
 partitionPowers n =
-  let noRoots = filter hasNoRoots [1..n]
+  let noRoots = filter hasNoRoots [2..n]
       partitions = map (powersBelow (n+1)) noRoots
   in zip noRoots partitions
 
+uniquePowers n l = foldl union [] (map (\x -> map (*x) [2..n]) l)
+
 main = do
-  print $ (partitionPowers 100)
-  -- print $ map (map (take 10 . powers)) (partitionPowers 10)
+    let n = 100
+        parts = partitionPowers n
+        pows = map snd parts
+        uniq = map (uniquePowers n) pows
+        num = sum (map length uniq)
+--     print parts
+--     print pows
+--     print uniq
+    print num
+
+--     let ref = sort $ union [] [a^b | a <- [2..n], b <- [2..n]]
+--     putStrLn "Reference:"
+--     print $ ref
+--     print $ length $ ref
