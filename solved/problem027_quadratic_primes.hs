@@ -37,8 +37,6 @@ compareBy f a b = compare (f a) (f b)
 
 main = do
     let k = 999
-        p = maximumBy (compareBy (numPrimes . uncurry p)) [(a, b) | a <- [-k..k], b <- takeWhile (<= k) primes, a >= -b]
-    print p
-    print $ uncurry (*) p
---     print $ numPrimes (p 1 41)
-
+        pair = maximumBy (compareBy (numPrimes . uncurry p)) [(a, b) | a <- [-k..k], b <- takeWhile (<= k) primes, a >= -b]
+    print pair
+    print $ uncurry (*) pair
