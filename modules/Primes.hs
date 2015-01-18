@@ -6,9 +6,14 @@ isFactor n k = mod n k == 0
 
 isPrime :: Integer -> Bool
 isPrime 1 = False
-isPrime n = not $ any (isFactor n) testRange
+isPrime n
+    | n <= 0 = False
+    | otherwise = not $ any (isFactor n) testRange
     where maxTest = min (ceiling $ sqrt (fromIntegral n)) (n-1)
           testRange = [2..maxTest]
+
+primes :: [Integer]
+primes = filter isPrime [1..]
 
 isPrimeFactor :: Integer -> Integer -> Bool
 isPrimeFactor n k = (isFactor n k) && (isPrime k)

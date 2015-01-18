@@ -23,3 +23,22 @@
 --     Find the product of the coefficients, a and b, for the quadratic
 -- 	expression that produces the maximum number of primes for
 -- 	consecutive values of n, starting with n = 0.
+
+import Primes
+import Data.List
+
+numPrimes :: (Integer -> Integer) -> Integer
+numPrimes p = fromIntegral $ length $ takeWhile isPrime $ map p [0..]
+
+p :: Integer -> Integer -> Integer -> Integer
+p a b n = n^2 + a*n + b
+
+compareBy f a b = compare (f a) (f b)
+
+main = do
+    let k = 999
+        p = maximumBy (compareBy (numPrimes . uncurry p)) [(a, b) | a <- [-k..k], b <- takeWhile (<= k) primes, a >= -b]
+    print p
+    print $ uncurry (*) p
+--     print $ numPrimes (p 1 41)
+
