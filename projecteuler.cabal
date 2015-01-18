@@ -198,3 +198,21 @@ executable problem030
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+
+executable problem031
+  main-is: problem031_coin_sums.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem032
+  main-is: problem032_pandigital_products.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem033
+  main-is: problem033_digit_cancelling_fractions.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
