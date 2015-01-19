@@ -234,3 +234,9 @@ executable problem036
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+
+executable problem037
+  main-is: problem037_truncatable_primes.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
