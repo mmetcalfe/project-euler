@@ -252,3 +252,9 @@ executable problem039
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+
+executable problem040
+  main-is: problem040_champernowne's_constant.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
