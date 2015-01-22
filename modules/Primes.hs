@@ -1,6 +1,8 @@
 module Primes where
 -- module Primes (isFactor, isPrime, isPrimeFactor, primeFactors, primeFactorsMultiplicity) where
 
+import Data.List (intersect)
+
 isFactor :: Integer -> Integer -> Bool
 isFactor n k = mod n k == 0
 
@@ -32,6 +34,12 @@ primeFactors n
       let r = factorOrder n f
       in f : primeFactors (div n (f^r))
     where f = firstPrimeFactor n 2
+
+areCoprime :: Integer -> Integer -> Bool
+areCoprime a b = null $ intersect (primeFactors a) (primeFactors b)
+
+coprimes :: Integer -> [Integer]
+coprimes k = filter (areCoprime k) [1..]
 
 factorOrder' :: Integer -> Integer -> Integer -> Integer
 factorOrder' n f k = if isFactor n v then factorOrder' n f k' else k
