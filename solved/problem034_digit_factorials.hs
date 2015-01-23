@@ -8,3 +8,13 @@
 -- 	factorial of their digits.
 -- 
 --     Note: as 1! = 1 and 2! = 2 are not sums they are not included.
+
+import Data.Digits
+
+factorial 0 = 1
+factorial n = n * factorial (n - 1)
+
+isDigitFactorialSum n = ((== n) . sum . (map factorial) . (digits 10)) n
+
+main = do
+	print $ sum $ filter isDigitFactorialSum [3..10^6]
