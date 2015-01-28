@@ -16,3 +16,32 @@
 --     Using [words.txt](project/resources/p042_words.txt) (right click
 -- 	and 'Save Link/Target As...'), a 16K text file containing nearly
 -- 	two-thousand common English words, how many are triangle words?
+
+-- "A","ABILITY","ABLE","ABOUT","ABOVE"
+
+module Main (main) where
+
+import System.IO
+import qualified Data.List.Split as Split
+import Data.List
+import Data.Char
+import Figurates
+
+readWords :: String -> [String]
+readWords contents = map (filter (/='"')) (Split.splitOn "," contents)
+
+asciiValue :: Char -> Integer
+asciiValue c = fromIntegral (ord c - ord 'A' + 1)
+
+wordValue :: String -> Integer
+wordValue = sum . map asciiValue
+
+main = do
+  withFile "problem_pages/project/resources/p042_words.txt" ReadMode (\handle -> do
+    contents <- hGetContents handle
+    let words = sort $ readWords contents
+    let values = map wordValue words
+    let triangleWords = filter (isTriangular . snd) (zip words values)
+    print triangleWords
+    print $ length triangleWords
+    )
