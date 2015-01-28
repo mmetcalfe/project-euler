@@ -284,3 +284,21 @@ executable problem044
   build-depends:       base >=4.7 && <4.8
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
+
+executable problem046
+  main-is: problem046_goldbach's_other_conjecture.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem045
+  main-is: "problem045_triangular,_pentagonal,_and_hexagonal.hs"
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem047
+  main-is: problem047_distinct_primes_factors.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010

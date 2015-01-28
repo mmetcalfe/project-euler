@@ -21,3 +21,13 @@
 -- 
 --     What is the smallest odd composite that cannot be written as the
 -- 	sum of a prime and twice a square?
+
+import Primes
+
+main = do
+    let oddComposites = filter (not . isPrime) [3, 5..]
+        doubleSquares = map ((*2) . (^2)) [1..]
+        candiditeSquares = map (\n -> (n, takeWhile (<n) doubleSquares)) oddComposites
+        counterExample = head $ dropWhile (\(n, l) -> any isPrime (map (n-) l)) candiditeSquares
+    print counterExample
+    print $ fst counterExample
