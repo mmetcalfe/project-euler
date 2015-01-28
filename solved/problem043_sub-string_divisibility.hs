@@ -20,3 +20,18 @@
 -- 
 --     Find the sum of all 0 to 9 pandigital numbers with this
 -- 	property.
+
+import Primes
+import Data.List
+
+slice from to l = take (to - from + 1) $ drop (from - 1) l
+
+substringDiv from to n s = read (slice from to s) `mod` n == 0
+
+fullSubstringDiv s = all (\i -> substringDiv (i + 2) (i+4) (primes !! i) s) [0..6]
+
+main = do
+    let strings = filter fullSubstringDiv (permutations "0123456789")
+        nums = map read strings :: [Integer]
+    print nums
+    print $ sum nums
