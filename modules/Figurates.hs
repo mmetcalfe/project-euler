@@ -19,8 +19,11 @@ triangular n = (n*(n+1)) `div` 2
 square :: Integer -> Integer
 square n = n^2
 
---pentagonal :: Integer -> Integer
---pentagonal n = (n * (3*n - 1)) `div` 2
+pentagonal :: Integer -> Integer
+pentagonal n = (n * (3*n - 1)) `div` 2
+
+pentagonalIndex n = ((+1) . floor . sqrt . (/3) . fromIntegral . (*2)) n
+isPentagonal n = (pentagonal . pentagonalIndex) n == n
 
 --hexagonal :: Integer -> Integer
 --hexagonal n = n * (2*n − 1)
