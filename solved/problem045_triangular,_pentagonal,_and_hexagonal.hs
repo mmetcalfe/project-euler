@@ -17,3 +17,8 @@
 -- 
 --     Find the next triangle number that is also pentagonal and
 -- 	hexagonal.
+
+import Figurates
+
+main = do
+	print $ head $ filter isTriangular $ filter isPentagonal $ map hexagonal [144..]

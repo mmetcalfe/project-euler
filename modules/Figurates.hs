@@ -22,14 +22,20 @@ square n = n^2
 pentagonal :: Integer -> Integer
 pentagonal n = (n * (3*n - 1)) `div` 2
 
-pentagonalIndex n = ((+1) . floor . sqrt . (/3) . fromIntegral . (*2)) n
-isPentagonal n = (pentagonal . pentagonalIndex) n == n
-
---hexagonal :: Integer -> Integer
---hexagonal n = n * (2*n − 1)
+hexagonal :: Integer -> Integer
+hexagonal n = n * (2 * n - 1)
 
 triangularIndex :: Integer -> Integer
 triangularIndex n = (floor . sqrt . fromIntegral . (*2)) n
-
 isTriangular :: Integer -> Bool
 isTriangular n = (triangular . triangularIndex) n == n
+
+pentagonalIndex :: Integer -> Integer
+pentagonalIndex n = ((+1) . floor . sqrt . (/3) . fromIntegral . (*2)) n
+isPentagonal :: Integer -> Bool
+isPentagonal n = (pentagonal . pentagonalIndex) n == n
+
+hexagonalIndex :: Integer -> Integer
+hexagonalIndex n = ((+1) . floor . sqrt . (/2) . fromIntegral) n
+isHexagonal :: Integer -> Bool
+isHexagonal n = (hexagonal . hexagonalIndex) n == n
