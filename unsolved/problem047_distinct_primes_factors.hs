@@ -17,3 +17,17 @@
 -- 
 --     Find the first four consecutive integers to have four distinct
 -- 	prime factors. What is the first of these numbers?
+
+import Primes
+
+numDistinctPrimeFactors :: Integer -> Integer
+numDistinctPrimeFactors = fromIntegral . length . primeFactors
+
+main = do
+    let k = 4 :: Integer
+        factorsTest = (==k) . numDistinctPrimeFactors
+        consecutiveTest n = all factorsTest [n..(n+k-1)]
+        first = head $ filter consecutiveTest [1..]
+        nums = [first..(first+k-1)]
+    print $ zip nums (map primeFactors nums)
+    print first
