@@ -13,3 +13,20 @@
 -- 
 --     What 12-digit number do you form by concatenating the three
 -- 	terms in this sequence?
+
+import Primes
+import Data.List
+
+fourDigitPrimes = takeWhile (<10000) $ dropWhile (<1000) primes
+
+perms n = sort $ filter isPrime $ nub $ filter (>=1000) $ map read (permutations n)
+
+length4Subsequences = (filter ((==3) . length)) . subsequences
+
+isArithmetic l =
+    let d = drop 1 $ zipWith (-) l (0:l)
+    in all (== head d) d
+
+main = do
+    let digitSets = nub $ map (sort . show) fourDigitPrimes
+    print $ filter (not . null) $ map (filter isArithmetic . length4Subsequences . perms) digitSets
