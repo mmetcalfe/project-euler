@@ -3,3 +3,5 @@
 *.iws
 build/
 dist/
+*.sublime-workspace
+
