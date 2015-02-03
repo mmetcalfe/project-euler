@@ -321,3 +321,33 @@ executable problem050
   hs-source-dirs:      unsolved solved modules
   default-language:    Haskell2010
 
+executable problem051
+  main-is: problem051_prime_digit_replacements.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem052
+  main-is: problem052_permuted_multiples.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem053
+  main-is: problem053_combinatoric_selections.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem054
+  main-is: problem054_poker_hands.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
+executable problem055
+  main-is: problem055_lychrel_numbers.hs
+  build-depends:       base >=4.7 && <4.8
+  hs-source-dirs:      unsolved solved modules
+  default-language:    Haskell2010
+
