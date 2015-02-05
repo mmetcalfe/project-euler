@@ -58,17 +58,37 @@
 -- 
 --     How many hands does Player 1 win?
 
+import Data.Char
+
 data Suit = H | D | C | S
             deriving (Eq, Ord, Show, Read)
 
-data Rank = A | K | Q | J | Integer
-            deriving (Eq, Ord, Show, Read, Bounded, Enum)
+data Rank = A | K | Q | J | T | N Integer
+            deriving (Eq, Ord, Show, Read)
 
 data Card = Card Rank Suit
+            deriving (Eq, Ord, Show, Read)
 
 handsStr = "8C TS KC 9H 4S 7D 2S 5D 3S AC"
 
-hands = (read . words) handsStr :: [Card]
+-- hands = (read . words) handsStr :: [Card]
+
+toString :: Card -> String
+toString (Card r s) =
+    let rs = case r of
+                (N i) -> show i
+                _     -> show r
+    in rs ++ show s
+
+fromString :: String -> Card
+fromString (rt:st:[]) =
+    let d = ord rt
+        r = if d >= ord 'A' && d <= ord 'Z'
+                then read [rt] :: Rank
+                else read ("N " ++ [rt]) :: Rank 
+        s = read [st] :: Suit
+    in Card r s
+
 
 main = do
-    print $ hands
+    print $ map fromString $ words handsStr
