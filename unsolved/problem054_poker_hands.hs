@@ -58,7 +58,11 @@
 -- 
 --     How many hands does Player 1 win?
 
+import Data.List
+import Data.Function (on)
 import Data.Char
+import Data.Ord
+import System.IO
 
 data Suit = H | D | C | S
             deriving (Eq, Ord, Show, Read)
@@ -66,29 +70,102 @@ data Suit = H | D | C | S
 data Rank = A | K | Q | J | T | N Integer
             deriving (Eq, Ord, Show, Read)
 
-data Card = Card Rank Suit
+data SymCard = SymCard Rank Suit
             deriving (Eq, Ord, Show, Read)
 
-handsStr = "8C TS KC 9H 4S 7D 2S 5D 3S AC"
+type Card = (Integer, Suit)
 
--- hands = (read . words) handsStr :: [Card]
+data Hand = Hand [Card]
+            deriving (Eq, Show)
 
-toString :: Card -> String
-toString (Card r s) =
+instance Ord Hand where
+    compare a b = EQ
+
+data Score = Unknown
+           | StraightFlush Card
+           | FourOfAKind Integer
+           | FullHouse Integer
+           | Flush Suit
+           | Straight Integer
+           | ThreeOfAKind Integer
+           | TwoPairs [Integer]
+           | OnePair Integer
+           | HighCard Integer
+            deriving (Eq, Show, Read)
+
+scoreHand (Hand cards)
+    | isStraightFlush = StraightFlush (last cards)
+    | isFourOfAKind   = FourOfAKind (fst . head $ head rankGroups)
+    | isFullHouse     = FullHouse (fst . head $ head rankGroups)
+    | isFlush         = Flush (snd . head $ head rankGroups)
+    | isStraight      = Straight (last ranks)
+    | isThreeOfAKind  = ThreeOfAKind (fst . head $ head rankGroups)
+    | isTwoPairs      = TwoPairs (sort $ map (fst . head) (take 2 rankGroups))
+    | isOnePair       = OnePair (fst . head $ head rankGroups)
+    | isHighCard      = HighCard (last ranks)
+    | otherwise       = Unknown
+    where compareLength = compare `on` length
+          sortByMap f = sortBy (compare `on` f)
+          groupByMap f = groupBy ((==) `on` f)
+          suits = (reverse . sortByMap length) . (groupByMap snd) . (sortByMap snd) $ cards
+          rankGroups = (reverse . sortByMap length) . (groupByMap fst) . (sortByMap fst) $ cards
+          ranks = sort $ map fst cards
+          isFourOfAKind = (length (head rankGroups) == 4)
+          isFullHouse = (length (head rankGroups) == 3) && (length rankGroups == 2)
+          isFlush = (length suits == 1)
+          isStraight = tail (zipWith (-) ranks (0 : ranks)) == [1, 1, 1, 1]
+          isStraightFlush = isStraight && isFlush
+          isThreeOfAKind  = (length (head rankGroups) == 3)
+          isTwoPairs      = all ((==2) . length) (take 2 rankGroups)
+          isOnePair       = (length (head rankGroups) == 2)
+          isHighCard      = True
+
+integerRank r = case r of
+                    (N i) -> i
+                    T     -> 10
+                    J     -> 11
+                    Q     -> 12
+                    K     -> 13
+                    A     -> 14
+
+toCard (SymCard r s) = (integerRank r, s)
+
+-- handsStr = "8C TS KC 9H 4S 7D 2S 5D 3S AC"
+
+-- hands = (read . words) handsStr :: [SymCard]
+
+toString :: SymCard -> String
+toString (SymCard r s) =
     let rs = case r of
                 (N i) -> show i
                 _     -> show r
     in rs ++ show s
 
-fromString :: String -> Card
+fromString :: String -> SymCard
 fromString (rt:st:[]) =
     let d = ord rt
         r = if d >= ord 'A' && d <= ord 'Z'
                 then read [rt] :: Rank
                 else read ("N " ++ [rt]) :: Rank 
         s = read [st] :: Suit
-    in Card r s
+    in SymCard r s
 
+lineToHands :: String -> (Hand, Hand)
+lineToHands str =
+    let cards = map (toCard . fromString) $ words str
+        (h1, h2) = splitAt 5 cards
+    in (Hand (sort h1), Hand (sort h2))
+
+scoreHands (a, b) = (scoreHand a, scoreHand b)
 
 main = do
-    print $ map fromString $ words handsStr
+    withFile "problem_pages/project/resources/p054_poker.txt" ReadMode (\handle -> do
+        contents <- hGetContents handle
+        let hands = map lineToHands (lines contents)
+
+        print $ map scoreHands hands
+        -- print (take 1 $ map lineToHands (lines contents))
+        )
+    -- let hands = lineToHands handsStr
+    -- print $ hands
+    -- print $ (scoreHand h1, scoreHand h2)
