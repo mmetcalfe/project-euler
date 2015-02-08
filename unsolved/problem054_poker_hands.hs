@@ -107,17 +107,17 @@ scoreHand (Hand cards)
     where compareLength = compare `on` length
           sortByMap f = sortBy (compare `on` f)
           groupByMap f = groupBy ((==) `on` f)
-          suits = (reverse . sortByMap length) . (groupByMap snd) . (sortByMap snd) $ cards
-          rankGroups = (reverse . sortByMap length) . (groupByMap fst) . (sortByMap fst) $ cards
+          suits = reverse . sortByMap length . groupByMap snd . sortByMap snd $ cards
+          rankGroups = reverse . sortByMap length . groupByMap fst . sortByMap fst $ cards
           ranks = sort $ map fst cards
-          isFourOfAKind = (length (head rankGroups) == 4)
+          isFourOfAKind = length (head rankGroups) == 4
           isFullHouse = (length (head rankGroups) == 3) && (length rankGroups == 2)
-          isFlush = (length suits == 1)
+          isFlush = length suits == 1
           isStraight = tail (zipWith (-) ranks (0 : ranks)) == [1, 1, 1, 1]
           isStraightFlush = isStraight && isFlush
-          isThreeOfAKind  = (length (head rankGroups) == 3)
+          isThreeOfAKind  = length (head rankGroups) == 3
           isTwoPairs      = all ((==2) . length) (take 2 rankGroups)
-          isOnePair       = (length (head rankGroups) == 2)
+          isOnePair       = length (head rankGroups) == 2
           isHighCard      = True
 
 integerRank r = case r of
@@ -142,7 +142,7 @@ toString (SymCard r s) =
     in rs ++ show s
 
 fromString :: String -> SymCard
-fromString (rt:st:[]) =
+fromString [rt, st] =
     let d = ord rt
         r = if d >= ord 'A' && d <= ord 'Z'
                 then read [rt] :: Rank
@@ -158,7 +158,7 @@ lineToHands str =
 
 scoreHands (a, b) = (scoreHand a, scoreHand b)
 
-main = do
+main =
     withFile "problem_pages/project/resources/p054_poker.txt" ReadMode (\handle -> do
         contents <- hGetContents handle
         let hands = map lineToHands (lines contents)
