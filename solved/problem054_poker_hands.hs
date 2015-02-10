@@ -78,19 +78,19 @@ type Card = (Integer, Suit)
 data Hand = Hand [Card]
             deriving (Eq, Show)
 
-instance Ord Hand where
-    compare a b = EQ
+-- instance Ord Hand where
+--     compare a b = EQ
 
 data HandType = Unknown
-              | StraightFlush
-              | FourOfAKind
-              | FullHouse
-              | Flush
-              | Straight
-              | ThreeOfAKind
-              | TwoPairs
-              | OnePair
               | HighCard
+              | OnePair
+              | TwoPairs
+              | ThreeOfAKind
+              | Straight
+              | Flush
+              | FullHouse
+              | FourOfAKind
+              | StraightFlush
               deriving (Eq, Ord, Show)
 
 type Score = (HandType, [Integer])
@@ -106,15 +106,15 @@ type Score = (HandType, [Integer])
             -- deriving (Eq, Show, Read)
 
 scoreHand (Hand cards)
-    -- | isStraightFlush = (StraightFlush, [last cards])
-    | isFourOfAKind   = (FourOfAKind, rankGroups)
-    -- | isFullHouse     = (FullHouse, [fst . fst . head $ head rankGroups])
-    -- | isFlush         = (Flush, reverse ranks)
-    -- | isStraight      = (Straight, [highCardRank])
-    -- | isThreeOfAKind  = (ThreeOfAKind, [fst . head $ head rankGroups])
-    -- | isTwoPairs      = (TwoPairs, (sort $ map (fst . head) (take 2 rankGroups)))
-    -- | isOnePair       = (OnePair, [fst . head $ head rankGroups])
-    -- | isHighCard      = (HighCard, reverse ranks)
+    | isStraightFlush = (StraightFlush, [(fst . last) cards])
+    | isFourOfAKind   = (FourOfAKind, [(fst . head . head) rankGroups])
+    | isFullHouse     = (FullHouse, [(fst . head . head) rankGroups])
+    | isFlush         = (Flush, reverse ranks)
+    | isStraight      = (Straight, [highCardRank])
+    | isThreeOfAKind  = (ThreeOfAKind, [fst . head $ head rankGroups])
+    | isTwoPairs      = (TwoPairs, sortBy (flip compare) (map (fst . head) (take 2 rankGroups))) -- TODO: High card.
+    | isOnePair       = (OnePair, [fst . head $ head rankGroups])
+    | isHighCard      = (HighCard, reverse ranks)
     | otherwise       = (Unknown, [])
     where compareLength = compare `on` length
           sortByMap f = sortBy (compare `on` f)
@@ -175,10 +175,13 @@ main =
     withFile "problem_pages/project/resources/p054_poker.txt" ReadMode (\handle -> do
         contents <- hGetContents handle
         let hands = map lineToHands (lines contents)
-            allHands = concatMap (\(a,b) -> [a, b]) hands
-        -- mapM_ print $ filter ((==FourOfAKind) . fst . fst . snd) $ zip hands (map scoreHands hands)
-        mapM_ print $ filter ((/=Unknown) . fst . fst) $ zip (map scoreHand allHands) allHands
-        -- print (take 1 $ map lineToHands (lines contents))
+            scores = map scoreHands hands
+            wins = filter (uncurry (>)) scores
+        mapM_ print wins
+        print $ length wins
+--         mapM_ print $ filter ((==FourOfAKind) . fst . fst . snd) $ zip hands (map scoreHands hands)
+--         let allHands = concatMap (\(a,b) -> [a, b]) hands
+--         mapM_ print $ filter ((==Unknown) . fst . fst) $ zip (map scoreHand allHands) allHands
         )
     -- let hands = lineToHands handsStr
     -- print $ hands
